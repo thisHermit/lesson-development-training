@@ -383,7 +383,7 @@
         <ul><li><a href="#managing-issues">Managing issues</a></li>
 <li><a href="#pull-requests">Pull Requests</a></li>
 <li><a href="#managing-communication">Managing communication</a></li>
-<li><a href="#project-management">Project management</a></li>
+<li><a href="#project-planning-management">Project planning &amp; management</a></li>
 <li><a href="#project-governance">Project governance</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -451,7 +451,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Collaborating with Your Team</h1>
-        <p> Last updated on 2022-07-26 | <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/26-collaborating.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-07-27 | <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/26-collaborating.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -510,8 +510,8 @@
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="exercises-creating-issues-15-minutes" class="callout-inner">
-<h3 class="callout-title">Exercises: creating issues (15 minutes)</h3>
+<div id="exercise-creating-issues-15-minutes" class="callout-inner">
+<h3 class="callout-title">Exercise: creating issues (15 minutes)</h3>
 <div class="callout-content">
 <p>After your trial run, you should have created a list of issues you identified with your lesson. Open issues on the GitHub repository for your lesson, for each item on that list. Remember to add labels to each issue according to its type, priority, etc. As you create them, you may also want to assign these issues to a member of your lesson development team.</p>
 </div>
@@ -596,15 +596,24 @@
 <p><a href="https://slack.com/" class="external-link">Slack</a> is commonly used in the Carpentries community for quick, day-to-day message exchange among teams. You can create your own <a href="https://slack.com/intl/en-gb/" class="external-link">Slack workspace for free</a> or create a channel for your lesson development project under <a href="https://swcarpentry.slack.com/" class="external-link">the Carpentries public Slack workspace</a>. Note that the Carpentries Slack is an enterprise workspace so all messages and files will be retained and no messages will be lost (for free workspaces only the most recent 10,000 messages can be viewed and searched and file storage limit is 5 GB).</p>
 <p>Collaborators can also use other platforms to discuss lesson development or receive contributions from newcomers who are not yet fluent in using GitHub’s systems of communication. The Carpentries can assist with creating a mailing list specific to the development of your lesson on their <a href="https://carpentries.topicbox.com/" class="external-link">TopicBox</a> platform for managing threaded email discussions. Also make sure to join the <a href="https://carpentries.topicbox.com/groups/incubator-developers" class="external-link">Incubator lesson developers mailing list</a> on TopicBox to keep an eye on announcements and discussions relating to lesson development in general within the Carpentries community.</p>
 <p>Meeting minutes are a useful way of providing a permanent record of the purpose of a meeting and what was talked about, including any decisions made or actions taken, that can be referred back to for any follow-ups. Recording meeting minutes does not have to be hard - remember that you are part of a team and there are many platforms that allow collaborative note taking. The Carpentries provides <a href="https://codimd.carpentries.org/" class="external-link">CodiMD</a> and <a href="https://pad.carpentries.org/" class="external-link">Etherpad</a> instances as two options for taking shared notes, widely used at workshops for sharing pieces of code, references and notes between instructors and learners. For some advice on holding effective meetings, see <a href="https://teachtogether.tech/en/index.html#s:meetings" class="external-link">the <em>Meetings, meetings, meetings</em> section of Teaching Tech Together</a> by Greg Wilson.</p>
-</section><section id="project-management"><h2 class="section-heading">Project management</h2>
+</section><section id="project-planning-management"><h2 class="section-heading">Project planning &amp; management</h2>
 <hr class="half-width"><p>Developing a lesson is a project and, like most projects, it consists of multiple tasks. Keeping track of the list of tasks the team has to do, progress on each, prioritising tasks for future development, sprints and releases, etc., quickly becomes a non-trivial task in itself. Without a good project management framework, it can be hard to keep track of what’s done, or what needs doing, and particularly difficult to convey that to others in the team or share the responsibilities.</p>
-<p>GitHub’s project management framework <strong>Project Board</strong> is a tool for keeping track of all the different components of a project, and what their current status is. It does this using columns and cards - you break your project down into tasks which you write on cards, then move the cards between columns that describe the status of each task. Cards are usually small, descriptive and self-contained tasks that build on each other. Breaking a project down into clearly-defined tasks makes it a lot easier to manage and develop. GitHub project boards interact and integrate with the other features of the site such as issues and pull requests - cards can be added to track the progress of such tasks and automatically moved between columns based on their progress or status.</p>
+<p>GitHub provides two project management tools for this purpose - <strong>Milestones</strong> and <strong>Project Boards</strong>. Both Milestones and Project Boards implement an agile development/project management system to help you keep track of different components of the project and their current status. Milestones are good for <a href="https://www.atlassian.com/agile/scrum" class="external-link">scrum-style project development and management</a> - i.e. time-bound, structured iterations and working in short sprints on batches of issues. Project Boards implement a <a href="https://www.atlassian.com/agile/kanban" class="external-link">Kanban methodology</a> - good for managing continuous delivery and steady flow of work in a project.</p>
+<p>Both Project Boards and Milestones are a way of organising issues into smaller “sub-projects” (i.e. smaller than the “project” represented by the whole repository). When should you use one over the other? Project Boards provide a way of visualising and organising the work on a higher level (e.g. more suitable for project management tasks that are not time-bound). Milestones are a way to organise lower-level tasks that have deadlines and progress of which needs to be closely tracked (e.g. release management). How you organise and partition your project work is up to you and the size of your project. For example, you could create a project per milestone or have several milestones in a single project, and split milestones into shorter sprints.</p>
+<div class="section level3">
+<h3 id="milestones">Milestones<a class="anchor" aria-label="anchor" href="#milestones"></a></h3>
+<p>A Milestone is a collection of issues to be worked on in a given time period. Milestones are good for tracking progress as they provide an ordered list of issues which must all be resolved for the overall task to be considered complete. Milestones work like labels - they mark and group issues that are expected to be closed at some point in time.</p>
+<p>The <code>Milestones</code> page in GitHub is accessible from the <code>Issues</code> page - from there you can create a new milestone, see the percentage of issues completed for your milestones and their due dates. You can also sort milestones by due date and prioritise issues within a particular milestone. Back on the <code>Issues</code> page, you can assign issues to milestones and filter your issues by milestones.</p>
+</div>
+<div class="section level3">
+<h3 id="project-boards">Project Boards<a class="anchor" aria-label="anchor" href="#project-boards"></a></h3>
+<p>A Project Board (or Kanban board, from the Japanese word for ‘card’) uses columns and cards to keep track of tasks - you break your project down into tasks which you write on cards, then move the cards between columns that describe the status of each task. Cards are usually small, descriptive and self-contained tasks that build on each other. Breaking a project down into clearly-defined tasks makes it a lot easier to manage and develop. GitHub project boards interact and integrate with the other features of the site such as issues and pull requests - cards can be added to track the progress of such tasks and automatically moved between columns based on their progress or status.</p>
 <p>GitHub provides template boards that by default contain the three ‘basic’ columns, with pretty self-explanatory names:</p>
 <ul><li><code>To Do</code></li>
 <li><code>In Progress</code></li>
 <li><code>Done</code></li>
 </ul><p>If you add an issue or pull request to a card in the board, it will automatically be moved to ‘Done’ for you when you close the issue or merge the pull request. One common extra column is <code>On hold</code> or <code>Waiting</code>. If you have tasks that get held up by waiting on other people (e.g. to respond to your questions) then moving them to a separate column makes their current state clearer.</p>
-<p>You can also create a card without an issue. Such cards (or notes) can have detailed content like checklists. GitHub also allows you to convert a card to an issue so you can add labels or detailed comments to it. Sometimes, a card you thought was simple and self-contained might turn out to be a bigger task than you anticipated - in that case, it is sensible to create new cards that reference the one they broke off from.</p>
+<p>You can also create a card without an issue. Such cards (or notes) can have detailed content like checklists or ideas which are not necessary suitable for inclusion in your issue tracker. However, GitHub also allows you to convert a card to an issue, should you wish to do so, so you can add labels or detailed comments to it. Sometimes, a card you thought was simple and self-contained might turn out to be a bigger task than you anticipated - in that case, it is sensible to create new cards that reference the one they broke off from.</p>
 <p>Once your project board has a large number of cards on it, you might want to begin priorisiting them. Not all tasks are going to be equally important, and some will require others to be completed before they can even be begun. Common methods of prioritisation include:</p>
 <ul><li>
 <strong>Vertical position</strong>: the vertical arrangement of cards in a column implicitly represents their importance. High-priority bugs go to the top of <code>To Do</code>, whilst tasks that depend on others go beneath them. This is the easiest one to implement, though you have to remember to correctly place cards when you add them.</li>
@@ -612,7 +621,40 @@
 <strong>Priority columns</strong>: instead of a single <code>To Do</code> column, you can have two or more, for example - <code>To Do: Low Priority</code> and <code>To Do: High Priority</code>. When adding a card, you pick which is the appropriate column for it. You can even add a Triage column for newly-added issues that you’ve not yet had time to classify. This format works well for project boards devoted to bugs.</li>
 <li>
 <strong>Labels</strong>: if you convert each card into an issue, then you can label them with their priority - remember GitHub lets you create custom labels and set their colours. Label colours can provide a very visually clear indication of issue priority but require more administrative work on the project, as each card has to be an issue to be assigned a label. If you choose this route for issue prioritisation - be aware of accessibility issues for colour-blind people when picking colours.</li>
-</ul></section><section id="project-governance"><h2 class="section-heading">Project governance</h2>
+</ul><div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="project-boards-vs-milestones" class="callout-inner">
+<h3 class="callout-title">Project Boards vs Milestones</h3>
+<div class="callout-content">
+<p>For a good description of differences between the two, have a look at <a href="https://stackoverflow.com/questions/39591795/what-is-the-difference-relationship-between-github-projects-and-milestones" class="external-link">this answer on StackOverflow</a>.</p>
+<p>A Project Board answers the question:</p>
+<blockquote>
+<p><em>“What are we working on at the moment?”</em></p>
+</blockquote>
+<p>A Milestone answers the question:</p>
+<blockquote>
+<p><em>“What is remaining to finish off this task?”</em></p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="discussion3" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="exercise-prioritising-issues-planning-work-15-minutes" class="callout-inner">
+<h3 class="callout-title">Exercise: prioritising issues &amp; planning work (15 minutes)</h3>
+<div class="callout-content">
+<p>Use Project Boards and/or Milestones to prioritise issues and plan the first sprint and/or the first lesson release with your team.</p>
+<p>Depending on how many issues were registered on your repository, it is possible that you will not be able to work on all the issues in the first sprint. As the development of your lesson progresses, any remaining unresolved issues can be reconsidered and prioritised for another milestone and you can use a Project Board to plan them.</p>
+<p>This process of receiving new issues and requirements, prioritisation, and working on them is naturally continuous - with the benefit that at key stages your team is repeatedly re-evaluating what is important and needs to be worked on which helps to ensure real concrete progress against project goals and requirements which may change over time.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section id="project-governance"><h2 class="section-heading">Project governance</h2>
 <hr class="half-width"><p>In addition to managing your project on a day-to-day basis, you should consider a governance model for your lesson to describe the ground rules of participation, the roles that project participants can take on and the process for decision making within the project. You may wonder why you’d ever need a formal governance process - after all, everyone in your team is collegial, polite and hard-working. However, even among the most harmonious teams you will likely realise you need an agreed way to make decisions and resolve conflicts when your team encounters their first real disagreement.</p>
 <p>The moment your collaborator group exceeds 3 or 4 members (and fewer if the collaborators do not all know each other equally well at the outset) you should establish and document some kind of governance process. It will help mitigate any power imbalances which are expressed when one team member (or a group of team members) are more vocal and are able to dominate the decision-making process. It is advised to make these considerations early on, before your project grows too much and introducing structure and process into it becomes more difficult and complicated. Besides, if you do not establish these processes from the start, you are likely to discover the need to do so only when you first encounter disagreement within the team: a situation unlikely to provide perfect conditions for a discussion of governance.</p>
 <p>Here are some aspects of governing a project that you should consider. These are borrowed from <a href="https://merely-useful.tech/py-rse/teams.html" class="external-link">the <em>Working in teams</em> chapter</a> of <a href="https://merely-useful.tech/py-rse/index.html" class="external-link"><em>Research Software Engineering with Python</em></a>, a book on how to work productively in small teams where everyone is welcome:</p>
@@ -628,7 +670,7 @@
 <a href="https://github.com/github/MVG" class="external-link">GitHub’s Minimum Viable Governance</a> (MVG) for establishing a lightweight governance process into free and open source projects that are run in version control systems. In MVG decisions are made through consensus of the project maintainers or determined based on the maintainers’ consideration of a number of factors in “good faith”" (when explicit agreement of all maintainers cannot be reached). In reality, consensus-based governance can run you into trouble when you hit an issue where maintainers do not all agree but still want to make progress. Also, the definition of “good faith” is open to interpretation and leaves plenty of room for people, especially the powerful, to get away with acting in bad faith. A system based on voting and majorities may help you get around this issue. MVG is designed for a one organisation-many projects setup and is too elaborate for a single lesson project. However, it includes “boilerplate” template files for a steering committee, charter, governance, Code of Conduct documents, and language laying out a preference for consensus but with voting as a fallback, and other templates that may be helpful for those starting out and unsure about how to get on with establishing a governance process.</li>
 <li>
 <a href="https://docs.google.com/spreadsheets/d/1k8t1VPdcwKH7ZGaCA0q8NNxbFKQKkZGPth3nhfkKwAA/edit#gid=1287139202" class="external-link">This list of resources related to community governance</a> from <a href="https://cscce.org" class="external-link">The Center for Scientific Collaboration and Community Engagement</a> provides a collection of links to further reading material on this topic. It includes various guides, blog posts, and examples of community governance that may inform the discussions and decisions for your project.</li>
-</ul><div id="discussion3" class="callout discussion">
+</ul><div id="discussion4" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -699,9 +741,9 @@
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/26-collaborating.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/26-collaborating.html",
-  "dateCreated": "2022-07-26",
-  "dateModified": "2022-07-26",
-  "datePublished": "2022-07-26"
+  "dateCreated": "2022-07-27",
+  "dateModified": "2022-07-27",
+  "datePublished": "2022-07-27"
 }
 
   </script><script>
