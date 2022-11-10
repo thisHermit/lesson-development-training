@@ -212,6 +212,7 @@
         <ul><li><a href="#github-pages">GitHub Pages</a></li>
 <li><a href="#using-the-carpentries-workbench">Using The Carpentries Workbench</a></li>
 <li><a href="#adding-lesson-content">Adding Lesson Content</a></li>
+<li><a href="#episodes">Episodes</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -449,7 +450,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>The Carpentries Workbench</h1>
-        <p> Last updated on 2022-07-28 | 
+        <p> Last updated on 2022-11-10 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/07-infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -520,7 +521,7 @@
 <p>To get started, we first need to create a new repository for our lesson. We will use a template to do this, so that the new repository contains the basic files and folders that the Workbench needs in order to build a lesson site. There are currently two templates to choose between:</p>
 <ol style="list-style-type: decimal"><li><a href="https://github.com/carpentries/workbench-template-md/generate" class="external-link">A Markdown template</a></li>
 <li>
-<a href="https://github.com/carpentries/workbench-template-rmd/generate" class="external-link">An RMarkdown template</a>, best suited to lessons that will include R source code that will generate output.</li>
+<a href="https://github.com/carpentries/workbench-template-rmd/generate" class="external-link">An RMarkdown template</a>, best suited to lessons you expect to include R source code that will generate output.</li>
 </ol><p><strong>One member of each participating lesson team</strong> should choose one of these templates, following the link above and completing the configuration as follows:</p>
 <ul><li>add a name for the repository
 <ul><li>The name should be descriptive but fairly brief, with hyphens (<code>-</code>) to separate words</li>
@@ -647,7 +648,10 @@
 </div>
 </div>
 </div>
-<p>The main body of the lesson is written in <em>episodes</em>: the individual chunks or sections that the lesson is separated into. The episode pages of the lesson site will be constructed from Markdown files in the <code>episodes</code> folder of the lesson repository.</p>
+</div>
+</section><section id="episodes"><h2 class="section-heading">Episodes<a class="anchor" aria-label="anchor" href="#episodes"></a>
+</h2>
+<hr class="half-width"><p>The main body of the lesson is written in <em>episodes</em>: the individual chunks or sections that the lesson is separated into. The episode pages of the lesson site will be constructed from Markdown files in the <code>episodes</code> folder of the lesson repository.</p>
 <div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -660,11 +664,13 @@
 </div>
 </div>
 </div>
-<p>The <code>episodes</code> folder of the new repository contains a single file, <code>01-introduction.md</code>. The content of this file includes examples of how to write Markdown files for The Carpentries Workbench.</p>
+<p>The <code>episodes</code> folder of the new repository contains a single file, <code>introduction.md</code>. The content of this file includes examples of how to write Markdown files for The Carpentries Workbench.</p>
 <p>There are two important things to note:</p>
 <ol style="list-style-type: decimal"><li>Like <code>index.md</code>, the episode file begins with a short header. The fields in this header describe the episode title and the estimated time (in minutes) required to teach it and complete the exercises.</li>
 <li>The example content includes several lines that start with strings of colons (<code>:::::::</code>). These mark the beginnings and ends of structural elements within the page, called <em>fenced divs</em>. Each fenced div starts and ends with a string of colons. A word at the end of the starting colons indicates what kind of block it is. We will explore them in more detail later in the training.</li>
-</ol><p>Let’s create a new episode file, for one of the episodes you have just identified. First, open the “raw” view of the <code>01-introduction.md</code> example episode, and copy the first 19 lines, down to the blank line under the closing string of the <code>objectives</code> div.</p>
+</ol><div class="section level3">
+<h3 id="creating-a-new-episode">Creating a new episode<a class="anchor" aria-label="anchor" href="#creating-a-new-episode"></a></h3>
+<p>Let’s create a new episode file, for one of the episodes you have just identified. First, open the “raw” view of the <code>introduction.md</code> example episode, and copy the first 19 lines, down to the blank line under the closing string of the <code>objectives</code> div.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -688,11 +694,11 @@
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 
-<p>Now create a new file in the <code>episodes</code> folder and, based on the episodes you planned out in <em>Defining lesson objectives</em>, choose a name for it that concisely describes the intended content. To control the order of episodes in the lesson, the name should start with two digits, e.g. <code>02-data-visualisation.md</code>.</p>
-<p>For page content, paste those first 19 lines of the <code>01-introduction.md</code> file and:</p>
+<p>Now create a new file in the <code>episodes</code> folder and, based on the episodes you planned out in <em>Defining lesson objectives</em>, choose a name for it that concisely describes the intended content, e.g. <code>data-visualisation.md</code>.</p>
+<p>For page content, paste those first 19 lines of the <code>introduction.md</code> file and:</p>
 <ol style="list-style-type: decimal"><li>replace the title</li>
 <li>set the <code>teaching</code> and <code>exercises</code> fields to zero for now</li>
-<li>replace the contents of the <code>questions</code> and <code>objectives</code> divs with “TODO”</li>
+<li>replace the contents of the <code>questions</code> and <code>objectives</code> divs with “- TODO”</li>
 </ol><div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -714,6 +720,29 @@
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
+</div>
+<div class="section level3">
+<h3 id="adding-a-new-episode-to-the-lesson-navigation">Adding a new episode to the lesson navigation<a class="anchor" aria-label="anchor" href="#adding-a-new-episode-to-the-lesson-navigation"></a></h3>
+<p>A few minutes after the new file has been created, a new episode page should become available on your lesson site. To check, navigate with your web browser to <code>https://username.github.io/lesson-name/episode-name.html</code>, where <code>https://username.github.io/lesson-name/</code> is the URL of your lesson homepage, and <code>episode-name</code> is the name of the new episode file you created (without the <code>.md</code> or <code>.Rmd</code> extension).</p>
+<p>However, this new episode will not yet appear in the navigation of your lesson site. To enable this, we need to specify where the episode should appear in the order of the lesson. That episode order is defined in the <code>episodes</code> field of the <code>config.yaml</code> file:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span></code></pre>
+</div>
+<p>Add the name of the new episode file you created to this list in <code>config.yaml</code> and commit this change, for example:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> data-visualisation.md</span></span></code></pre>
+</div>
+<p>After the lesson site has been rebuilt on GitHub, you should see the episode title appear under <em>Chapters</em> in the left sidebar navigation of your lesson site after refreshing the webpage Clicking on that title will take you to the episode page built from the file you created. At the top of the page body, you will find the episode title and an <em>Overview</em> box containing a list of the questions and objectives defined for the episode. Later, we will add more content to your chosen episodes.</p>
+<p>TODO add a labelled screenshot of a new episode page</p>
 <div id="discussion4" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -722,12 +751,10 @@
 <h3 class="callout-title">Exercise: practice creating episodes (10 minutes)<a class="anchor" aria-label="anchor" href="#discussion4"></a>
 </h3>
 <div class="callout-content">
-<p>Repeat the steps you just saw, to create another new episode file. If you know what another episode in your lesson will be about, create the page for that. Otherwise, feel free to use any values you like for the file name and episode title.</p>
+<p>Repeat the steps you just saw, to create another new episode file and add it to the lesson site navigation. If you know what another episode in your lesson will be about, create the page for that. Otherwise, feel free to use any values you like for the file name and episode title.</p>
 </div>
 </div>
 </div>
-<p>When these episode files have been created, you can navigate back to the lesson website. Refresh the page and, under <em>Chapters</em> in the left sidebar, you should find the titles of all the episodes in the <code>episodes</code> folder of your repository. Clicking on one of those titles will take you to the episode page built from the file you created. At the top of the page body, you will find the episode title and an <em>Overview</em> box containing a list of the questions and objectives defined for the episode. Later, we will add more content to your chosen episodes.</p>
-<p>TODO add a labelled screenshot of a new episode page</p>
 <p>Using this approach, we can build up our lesson one episode at a time.</p>
 <p>We have now learned everything we need to be able to use The Carpentries Workbench, and our focus can return to the process of developing a new lesson.</p>
 <div id="keypoints1" class="callout keypoints">
@@ -776,7 +803,7 @@
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.10.7" class="external-link">sandpaper (0.10.7)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.10.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.2" class="external-link">pegboard (0.3.2)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.9" class="external-link">varnish (0.2.9)</a>.</p>
 			</div>
@@ -798,9 +825,9 @@
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/07-infrastructure.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/07-infrastructure.html",
-  "dateCreated": "2022-10-13",
-  "dateModified": "2022-07-28",
-  "datePublished": "2022-11-08"
+  "dateCreated": "2022-11-10",
+  "dateModified": "2022-11-10",
+  "datePublished": "2022-11-10"
 }
 
   </script><script>
