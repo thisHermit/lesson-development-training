@@ -447,7 +447,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Collaborating with Newcomers</h1>
-        <p> Last updated on 2023-06-27 | 
+        <p> Last updated on 2023-07-17 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/26-external.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -713,21 +713,102 @@ fixing such issues.</p>
 <h3 id="noticing-when-something-happens">Noticing When Something Happens<a class="anchor" aria-label="anchor" href="#noticing-when-something-happens"></a></h3>
 <p>GitHub implements a comprehensive <a href="https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications" class="external-link">notifications
 system</a> to keep you up-to-date with activities in the lesson
-repository. GitHub also provides an additional useful notification
-feature for collaborative work - <strong>Mentions</strong>. The mention
-system notifies team members when somebody else references them in an
-issue, comment or pull request - you can use this to notify people when
-you want to check a detail with them, or let them know something has
-been fixed or changed (much easier than writing out all the same
-information again in an email!). You can use the mention system to link
-to individual GitHub accounts or whole teams for mentioning multiple
-people. Typing <code>@</code> in GitHub will bring up a list of all
-accounts and teams linked to the repository that can be “mentioned”.</p>
+repository.</p>
 <p>Check out <a href="https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository" class="external-link">GitHub’s
 documentation on setting notifications on individual repository</a>. You
 can choose whether to watch or unwatch an individual repository, or can
 choose to only be notified of certain event types such as issues, pull
 requests, mentions, etc.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Time management tip: share the next callout, do not teach it
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>The next callout contains a lot of information, and can require a lot
+of time to discuss fully while training. We recommend that you do not
+dwell on these details while teaching unless you have time to spare.</p>
+<p>Instead, you could share <a href="#managing-github-notifications">a
+link to the callout</a> and mention to trainees that this information
+can be helpful if they are struggling with GitHub notifications.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="managing-github-notifications" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="managing-github-notifications" class="callout-inner">
+<h3 class="callout-title">Managing GitHub Notifications<a class="anchor" aria-label="anchor" href="#managing-github-notifications"></a>
+</h3>
+<div class="callout-content">
+<p>If you work on multiple projects, or the projects you follow on
+GitHub are particularly active, the volume of notifications you receive
+can quickly become overwhelming. Here are some approaches you can take
+to help you stay on top of things, and distinguish the high-priority
+tasks and important updates from the regular traffic.</p>
+<div class="section level3">
+<h3 id="email-notifications">Email Notifications<a class="anchor" aria-label="anchor" href="#email-notifications"></a></h3>
+<p>If you want to filter, organise, and redirect email notifications
+from GitHub, here are some characteristics of the messages that you make
+use of:</p>
+<ul><li>All GitHub notifications are sent from the address
+<code>notifications@github.com</code>.</li>
+<li>Notification emails are sent to the address
+<code>repo-name@noreply.github.com</code>, where <code>repo-name</code>
+is the name of the repository where the notification was triggered.</li>
+<li>The email subject begins with <code>[org-or-user/repo-name]</code>,
+where <code>org-or-user</code> is the name of the organisation or the
+username of the user who owns the repository and <code>repo-name</code>
+is the name of the repository where the notification was triggered.</li>
+<li>In addition to your email address, the cc field of the message
+contains an address that describes the type of event that triggered the
+notification, e.g. <code>author@noreply.github.com</code> for activity
+on an issue or pull request that you opened,
+<code>mention@noreply.github.com</code> for a mention of your username,
+or <code>team-mention@noreply.github.com</code> for a mention of a team
+you are a member of, etc.</li>
+<li>The email header (metadata) includes a <code>mailing-list</code>
+field with an identifier in the form
+<code>repo-name.org-or-user.github.com</code>, which can be used to
+filter by the project and/or its owner.</li>
+</ul><p><a href="https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#filtering-email-notifications" class="external-link">GitHub
+provides detailed documentation about all of the properties you can use
+to filter their notification emails</a>.</p>
+<p>Most email clients provide configuration for rules that can be set to
+redirect messages to particular folders, and/or to annotate them with a
+mark or flag, based on this kind of information. <a href="https://support.google.com/mail/answer/6579?hl=en" class="external-link">Here is the
+documentation for setting such rules in Gmail</a>.</p>
+</div>
+<div class="section level3">
+<h3 id="notifications-on-github-com">Notifications on GitHub.com<a class="anchor" aria-label="anchor" href="#notifications-on-github-com"></a></h3>
+<p>The alternative to using email to keep track of project activity is
+to manage notifications on GitHub. Adjust how you receive notifications
+in <a href="https://github.com/settings/notifications" class="external-link">the
+<em>Notifications</em> section of your account settings</a>. When logged
+in, you can visit <a href="https://github.com/notifications" class="external-link uri">https://github.com/notifications</a> to see notifications
+for your account, presented as a table. Through this interface, you
+can:</p>
+<ul><li>group notifications by repository.</li>
+<li>see notifications for a particular repository.</li>
+<li>see particular types of notification e.g. mentions, issue
+assignments, etc.</li>
+<li>create more sophisticated filters using the search bar, e.g. all
+mentions for all repositories in a particular organisation.</li>
+</ul><p>The account notification settings allow you to specify certain types
+of notification that should be sent by email, while everything else is
+collected in the web interface. Whatever strategy you choose, one of the
+most important habits that will help you stay on top of your projects
+and tasks is to remember to check these notifications frequently.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="saying-no">Saying “No”<a class="anchor" aria-label="anchor" href="#saying-no"></a></h3>
@@ -883,9 +964,9 @@ notifications will ensure regular progress on the lesson.</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/instructor/26-external.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/instructor/26-external.html",
-  "dateCreated": "2023-07-10",
-  "dateModified": "2023-06-27",
-  "datePublished": "2023-07-11"
+  "dateCreated": "2023-07-17",
+  "dateModified": "2023-07-17",
+  "datePublished": "2023-07-17"
 }
 
   </script><script>
