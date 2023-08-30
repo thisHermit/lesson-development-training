@@ -448,7 +448,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Wrap-up</h1>
-        <p> Last updated on 2023-08-21 | 
+        <p> Last updated on 2023-08-30 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/wrap-up2.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -547,6 +547,46 @@ training today</li>
 </div>
 </div>
 <p>Please stay in touch as you plan for your trial run.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Adding Design Notes to the Lesson Site
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>If trainees would like to add the Design Notes document they have
+been working on to their lesson site, they can do the following:</p>
+<ol style="list-style-type: decimal"><li>replace the first 13 lines with</li>
+</ol><pre><code>---
+title: Lesson Design Notes
+---</code></pre>
+<ol start="2" style="list-style-type: decimal"><li>save the file to the <code>instructors/</code> directory, and any
+images used in the file to the <code>episodes/fig</code> directory (the
+paths to source files for images will need to be adjusted to begin
+<code>episodes/fig/</code>)</li>
+<li>add the filename below <code>instructors:</code> in
+<code>config.yml</code> as they have done <a href="./infrastructure.html#adding-a-new-episode-to-the-lesson-navigation">for
+episode filenames below <code>episodes:</code> previously</a>. For
+example, if their file is saved with the name ‘design-notes.md’:</li>
+</ol><div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Information for Instructors</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">instructors</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> design-notes.md</span></span></code></pre>
+</div>
+<p>This will make the page accessible from the ‘More’ dropdown in
+Instructor View.</p>
+<p><em>Note that concept maps with GraphViz are not currently supported
+by the lesson infrastructure, so any concept maps added to the document
+on CodiMD will not be displayed correctly on the lesson site.</em></p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -619,7 +659,7 @@ your new lesson to a real audience and reflect on the experience.</li>
   "url": "https://carpentries.github.io/lesson-development-training/instructor/wrap-up2.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/instructor/wrap-up2.html",
   "dateCreated": "2023-08-30",
-  "dateModified": "2023-08-21",
+  "dateModified": "2023-08-30",
   "datePublished": "2023-08-30"
 }
 

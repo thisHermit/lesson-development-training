@@ -613,7 +613,17 @@ motivation for attending the training and building their lesson</li>
 </ul>
 <hr>
 <br></section><section id="audience"><h2 class="section-heading"><a href="audience.html">Identifying Your Target Audience</a></h2>
-<hr class="half-width"></section><section id="short-break1"><h2 class="section-heading"><a href="short-break1.html">Break</a></h2>
+<hr class="half-width">
+<h3 id="audience-headingInstructor1">
+<a href="audience.html#headingInstructor1">Lesson Design Notes Document</a><a class="anchor" aria-label="anchor" href="#audience-headingInstructor1"></a>
+</h3>
+<p>At this point, it may be helpful to share <a href="https://codimd.carpentries.org/HPwUE3FnTeSQJ9-_5EfU7Q?view#" class="external-link">the
+template for a Lesson Design Notes document</a> with trainees. They can
+make a copy of this document and fill in the lesson title now, then
+populate the document with the notes and information they produce
+throughout the training.</p>
+<hr>
+<br></section><section id="short-break1"><h2 class="section-heading"><a href="short-break1.html">Break</a></h2>
 <hr class="half-width"></section><section id="objectives"><h2 class="section-heading"><a href="objectives.html">Defining Lesson Objectives/Outcomes</a></h2>
 <hr class="half-width">
 <h3 id="objectives-headingInstructor1">
@@ -721,7 +731,42 @@ exercise do not have diagnostic power.</p>
 <hr class="half-width"></section><section id="operations"><h2 class="section-heading"><a href="operations.html">How we Operate</a></h2>
 <hr class="half-width"></section><section id="preparing"><h2 class="section-heading"><a href="preparing.html">Preparing to Teach</a></h2>
 <hr class="half-width"></section><section id="wrap-up2"><h2 class="section-heading"><a href="wrap-up2.html">Wrap-up</a></h2>
-<hr class="half-width"></section><section id="reflecting"><h2 class="section-heading"><a href="reflecting.html">Reflecting on Trial Runs</a></h2>
+<hr class="half-width">
+<h3 id="wrap-up2-headingInstructor1">
+<a href="wrap-up2.html#headingInstructor1">Adding Design Notes to the Lesson Site</a><a class="anchor" aria-label="anchor" href="#wrap-up2-headingInstructor1"></a>
+</h3>
+<p>If trainees would like to add the Design Notes document they have
+been working on to their lesson site, they can do the following:</p>
+<ol style="list-style-type: decimal">
+<li>replace the first 13 lines with</li>
+</ol>
+<pre><code>---
+title: Lesson Design Notes
+---</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>save the file to the <code>instructors/</code> directory, and any
+images used in the file to the <code>episodes/fig</code> directory (the
+paths to source files for images will need to be adjusted to begin
+<code>episodes/fig/</code>)</li>
+<li>add the filename below <code>instructors:</code> in
+<code>config.yml</code> as they have done <a href="./infrastructure.html#adding-a-new-episode-to-the-lesson-navigation">for
+episode filenames below <code>episodes:</code> previously</a>. For
+example, if their file is saved with the name ‘design-notes.md’:</li>
+</ol>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Information for Instructors</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">instructors</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> design-notes.md</span></span></code></pre>
+</div>
+<p>This will make the page accessible from the ‘More’ dropdown in
+Instructor View.</p>
+<p><em>Note that concept maps with GraphViz are not currently supported
+by the lesson infrastructure, so any concept maps added to the document
+on CodiMD will not be displayed correctly on the lesson site.</em></p>
+<hr>
+<br></section><section id="reflecting"><h2 class="section-heading"><a href="reflecting.html">Reflecting on Trial Runs</a></h2>
 <hr class="half-width">
 <h3 id="reflecting-headingInstructor1">
 <a href="reflecting.html#headingInstructor1">Discussion format</a><a class="anchor" aria-label="anchor" href="#reflecting-headingInstructor1"></a>
