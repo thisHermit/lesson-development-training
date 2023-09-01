@@ -1078,7 +1078,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1095,7 +1095,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1461,7 +1461,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1739,7 +1739,7 @@ lesson</strong>.</p>
 </div>
 </section></section><section id="aio-infrastructure"><p>Content from <a href="infrastructure.html">The Carpentries Workbench</a></p>
 <hr>
-<p> Last updated on 2023-08-25 | 
+<p> Last updated on 2023-09-01 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2071,6 +2071,35 @@ header, written in the same key-value pair syntax we encountered in
 <code>sandpaper</code>, one of the components of The Carpentries
 Workbench, and should be left untouched. The page content begins after
 the blank line that follows this header.</p>
+<div id="markdown-rendering-on-github" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="markdown-rendering-on-github" class="callout-inner">
+<h3 class="callout-title">Markdown Rendering on GitHub<a class="anchor" aria-label="anchor" href="#markdown-rendering-on-github"></a>
+</h3>
+<div class="callout-content">
+<p>You might have noticed by now that GitHub provides a preview of
+content in Markdown files, and displays an interpreted (“rendered”)
+version of Markdown file content by default in its web interface. You
+might also notice that the content of <code>index.md</code> is displayed
+differently when viewed on GitHub from how it appears on the homepage of
+your lesson website: the header mentioned above appears in a tabular
+layout on GitHub, but is not visible on the lesson homepage.</p>
+<p>This is because the lesson infrastructure accepts an expanded set of
+elements in the source Markdown files: syntax for components of a lesson
+website that are not part of the standard set of Markdown features,
+e.g. page metadata such as the YAML header above, or blocks to make
+exercises and solutions visually distinctive. In these cases, you may
+see GitHub render the content differently from how it appears on your
+website, or not at all.</p>
+<p>We will encounter more examples of this throughout the lesson, but
+the important thing to remember for now is that <strong>how GitHub
+displays source (R) Markdown files is not a reliable indicator of how
+content will be displayed in your website</strong>.</p>
+</div>
+</div>
+</div>
 <p>To get started on this home page, replace the template text with the
 same title and short description you added to your
 <code>README.md</code>.</p>
@@ -3855,7 +3884,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
@@ -6156,9 +6185,9 @@ you.</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/aio.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/aio.html",
-  "dateCreated": "2023-08-31",
-  "dateModified": "2023-08-31",
-  "datePublished": "2023-08-31"
+  "dateCreated": "2023-09-01",
+  "dateModified": "2023-09-01",
+  "datePublished": "2023-09-01"
 }
 
   </script><script>
