@@ -109,6 +109,12 @@
     <loc>https://carpentries.github.io/lesson-development-training/audience.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/lesson-development-training/collaborating-newcomers.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/lesson-development-training/collaborating-team.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/lesson-development-training/collaborating.html</loc>
   </url>
   <url>
@@ -247,6 +253,12 @@
     <loc>https://carpentries.github.io/lesson-development-training/instructor/audience.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/lesson-development-training/instructor/collaborating-newcomers.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/lesson-development-training/instructor/collaborating-team.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/lesson-development-training/instructor/collaborating.html</loc>
   </url>
   <url>
@@ -317,6 +329,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/lesson-development-training/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/lesson-development-training/instructor/project-management.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/lesson-development-training/instructor/reference.html</loc>
@@ -395,6 +410,9 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/lesson-development-training/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/lesson-development-training/project-management.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/lesson-development-training/reference.html</loc>
