@@ -476,7 +476,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>The Carpentries Workbench</h1>
-        <p> Last updated on 2023-09-06 | 
+        <p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -625,7 +625,7 @@ button, you should be presented with a brand new lesson repository.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Remind learners to paste URL of their lesson repository and the
 rendered version of the lesson to the collaborative document.</p>
@@ -735,17 +735,21 @@ minutes)<a class="anchor" aria-label="anchor" href="#practice-with-config.yaml-5
 </h3>
 <div class="callout-content">
 <p>Complete the configuration of your lesson by adjusting the following
-fields in <code>config.yaml</code>:</p>
+fields in <code>config.yaml</code>. Remember that FIXME values with
+quotes should be replaced with another value still in quotes and FIXMEs
+without quotes should be replaced by values without quotes.</p>
 <ul><li>
-<code>email</code>: add an email address people can contact with
+<code>contact</code>: add an email address people can contact with
 questions about the lesson/project.</li>
 <li>
 <code>created</code>: the date the lesson was created (today’s date)
 in YYYY-MM-DD format.</li>
 <li>
-<code>keywords</code>: a (short) list of keywords for the lesson,
-which can help people find your lesson when searching for resources
-online.</li>
+<code>keywords</code>: a (short) comma-separated list of keywords
+for the lesson, which can help people find your lesson when searching
+for resources online. At a minimum, include ‘lesson’, ‘pre-alpha’, and
+your lesson’s (human) language. For example, ‘lesson, pre-alpha,
+español’.</li>
 <li>
 <code>source</code>: change this to the URL for your lesson
 repository.</li>
@@ -923,7 +927,7 @@ lines, down to the blank line under the closing string of the
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Be careful here to ensure that participants who are collaborating on
 the same repository do not create conflicts e.g. by editing the same
@@ -1104,9 +1108,9 @@ RMarkdown files in the <code>episodes</code> folder.</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/instructor/infrastructure.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/instructor/infrastructure.html",
-  "dateCreated": "2023-09-12",
-  "dateModified": "2023-09-06",
-  "datePublished": "2023-09-12"
+  "dateCreated": "2023-09-13",
+  "dateModified": "2023-09-13",
+  "datePublished": "2023-09-13"
 }
 
   </script><script>

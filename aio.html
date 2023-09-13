@@ -1754,7 +1754,7 @@ lesson</strong>.</p>
 </div>
 </section></section><section id="aio-infrastructure"><p>Content from <a href="infrastructure.html">The Carpentries Workbench</a></p>
 <hr>
-<p> Last updated on 2023-09-06 | 
+<p> Last updated on 2023-09-13 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2015,18 +2015,22 @@ minutes)<a class="anchor" aria-label="anchor" href="#practice-with-config.yaml-5
 </h3>
 <div class="callout-content">
 <p>Complete the configuration of your lesson by adjusting the following
-fields in <code>config.yaml</code>:</p>
+fields in <code>config.yaml</code>. Remember that FIXME values with
+quotes should be replaced with another value still in quotes and FIXMEs
+without quotes should be replaced by values without quotes.</p>
 <ul>
 <li>
-<code>email</code>: add an email address people can contact with
+<code>contact</code>: add an email address people can contact with
 questions about the lesson/project.</li>
 <li>
 <code>created</code>: the date the lesson was created (today’s date)
 in YYYY-MM-DD format.</li>
 <li>
-<code>keywords</code>: a (short) list of keywords for the lesson,
-which can help people find your lesson when searching for resources
-online.</li>
+<code>keywords</code>: a (short) comma-separated list of keywords
+for the lesson, which can help people find your lesson when searching
+for resources online. At a minimum, include ‘lesson’, ‘pre-alpha’, and
+your lesson’s (human) language. For example, ‘lesson, pre-alpha,
+español’.</li>
 <li>
 <code>source</code>: change this to the URL for your lesson
 repository.</li>
@@ -3886,7 +3890,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
@@ -6317,9 +6321,9 @@ you.</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/aio.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/aio.html",
-  "dateCreated": "2023-09-12",
-  "dateModified": "2023-09-12",
-  "datePublished": "2023-09-12"
+  "dateCreated": "2023-09-13",
+  "dateModified": "2023-09-13",
+  "datePublished": "2023-09-13"
 }
 
   </script><script>
