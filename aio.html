@@ -1093,7 +1093,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1110,7 +1110,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1476,7 +1476,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1754,7 +1754,7 @@ lesson</strong>.</p>
 </div>
 </section></section><section id="aio-infrastructure"><p>Content from <a href="infrastructure.html">The Carpentries Workbench</a></p>
 <hr>
-<p> Last updated on 2023-09-13 | 
+<p> Last updated on 2023-09-18 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1895,12 +1895,20 @@ the configuration as follows:</p>
 settings</li>
 </ul>
 </li>
+<li>make sure the “Include all branches” box is checked to copy all
+branches from the template repository
+<ul>
+<li>this is important as lessons are developed in branch
+<code>main</code> but rendered into websites from branch
+<code>gh-pages</code>
+</li>
+</ul>
+</li>
 <li>in the “Description” field, write the title of your lesson</li>
 <li>choose “Public” visibility</li>
-<li>make sure the “Include all branches” box is checked</li>
 </ul>
-<p>After pressing the <em>Create repository using this template</em>
-button, you should be presented with a brand new lesson repository.</p>
+<p>After pressing the <em>Create repository</em> button, you should be
+presented with a brand new lesson repository.</p>
 <p>TODO insert screenshot of repository structure here</p>
 
 <div class="section level4">
@@ -3908,7 +3916,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
@@ -6389,9 +6397,9 @@ you.</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/lesson-development-training/aio.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/aio.html",
-  "dateCreated": "2023-09-13",
-  "dateModified": "2023-09-13",
-  "datePublished": "2023-09-13"
+  "dateCreated": "2023-09-18",
+  "dateModified": "2023-09-18",
+  "datePublished": "2023-09-18"
 }
 
   </script><script>
