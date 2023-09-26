@@ -475,7 +475,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Collaborating with Your Team</h1>
-        <p> Last updated on 2023-09-01 | 
+        <p> Last updated on 2023-09-26 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/collaborating-team.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -544,45 +544,52 @@ issue can be assigned to a specific team member - this can be a helpful
 way to know who is currently working to fix an issue or a way to assign
 responsibility. You can assign one or more labels to issues to classify
 or group them. Labels can also be given colours, allowing you to see at
-a glance from the Issues page the state of your project. The default
-labels available in GitHub include:</p>
+a glance from the Issues page the state of your project.</p>
+<p>Lesson repositories created from the template are configured with <a href="https://docs.carpentries.org/topic_folders/maintainers/github_labels.html" class="external-link">The
+Carpentries standard set of labels</a>, which are designed to help
+lesson developers and maintainers to indicate the type and current
+status of issues. Some of the most frequently used labels include:</p>
 <ul><li>
-<code>bug</code> - indicates an unexpected problem or unintended
-behavior</li>
+<code>type:bug</code> - indicates something that is broken in the
+lesson, e.g. a factual error or broken link</li>
 <li>
-<code>documentation</code> - indicates a need for improvements or
-additions to documentation</li>
+<code>type:enhancement</code> - indicates that the issue is
+proposing a way for the lesson to be improved</li>
 <li>
-<code>duplicate</code> - indicates similar or already reported
-issues, pull requests, or discussions</li>
+<code>type:accessibility</code> - indicates that the issue relates
+to the accessibility of the lesson</li>
 <li>
-<code>enhancement</code> - indicates new feature requests, or if
-they are created by a lesson maintainer, indicate planned new
-features</li>
+<code>status:wait</code> - indicates that the issue cannot or will
+not be worked on until something else is resolved, e.g. the solution to
+the issue is dependent on another change yet to be made (see also:
+<code>status:blocked</code>)</li>
 <li>
-<code>good first issue</code> - indicates a good issue for
-first-time contributors</li>
+<code>status:waiting for response</code> - indicates that further
+progress cannot be made until someone (usually the person who submitted
+the issue) has responded</li>
+<li>
+<code>status:in progress</code> - indicates that someone is working
+on a resolution for the issue, preventing potentially redundant efforts
+from being made by others</li>
+<li>
+<code>good first issue</code> - indicates that the issue requires
+relatively little knowledge of the rpoject to fix, making it a good
+choice for first-time contributors</li>
 <li>
 <code>help wanted</code> - indicates that a maintainer wants help on
 an issue or pull request</li>
-<li>
-<code>invalid</code> - indicates that an issue, pull request, or
-discussion is no longer relevant</li>
-<li>
-<code>question</code> - indicates that an issue, pull request, or
-discussion needs more information</li>
-<li>
-<code>wontfix</code> - indicates that work won’t continue on an
-issue, pull request, or discussion</li>
-</ul><p>Check the <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels" class="external-link">GitHub
+</ul><p>GitHub provides a default set of labels for repositories which can be
+used “as is” or customised (as done by The Carpentries above) - check
+the <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels" class="external-link">GitHub
 documentation on Issues</a> for the full reference. You can also create
-your own custom labels to help with classifying issues. There are no
-rules really about naming the labels - use whatever makes sense for your
-project. Some conventional custom labels include:
-<code>status:in progress</code> (to indicate that someone started
-working on the issue), <code>status:blocked</code> (to indicate that the
-progress on addressing the issue is blocked by another issue or
-activity), etc.</p>
+your own custom labels to help with classifying issues.</p>
+<p>If you are developing your lesson in <a href="https://carpentries-incubator.org/" class="external-link">The Carpentries Incubator</a>,
+you can register the repository for inclusion in The Carpentries <a href="https://carpentries.org/help-wanted-issues/" class="external-link">Help Wanted Issues
+page</a>, which will list all issues labeled with
+<code>help wanted</code> and/or <code>good first issue</code>. Issues
+listed on this page are more visible to the wider Carpentries community,
+making it a good way to attract spontaneous contributions from
+newcomers.</p>
 <div id="exercise-creating-issues-15-minutes" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -902,7 +909,7 @@ around lesson issues and development, respectively.</li>
   "url": "https://carpentries.github.io/lesson-development-training/instructor/collaborating-team.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/instructor/collaborating-team.html",
   "dateCreated": "2023-09-26",
-  "dateModified": "2023-09-01",
+  "dateModified": "2023-09-26",
   "datePublished": "2023-09-26"
 }
 
