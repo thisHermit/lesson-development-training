@@ -625,7 +625,7 @@ workshop.</li>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You might like to make a copy of <a href="https://codimd.carpentries.org/cldt-notes-template" class="external-link">the template
 CodiMD notetaking page</a> and share your link with trainees so that you
@@ -1114,7 +1114,7 @@ different priorities, interests, and challenges than your own.</p>
   Lesson Design Notes Document
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>At this point, it may be helpful to share <a href="https://codimd.carpentries.org/HPwUE3FnTeSQJ9-_5EfU7Q?view#" class="external-link">the
 template for a Lesson Design Notes document</a> with trainees. They can
@@ -1154,7 +1154,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1171,7 +1171,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1480,7 +1480,7 @@ they are.</p>
   Markdown Table Template for Exercise
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You may find this template of a Markdown table useful to share with
 your trainees before they complete the next exercise.</p>
@@ -1569,7 +1569,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -2711,7 +2711,7 @@ individual steps along the pathway of the lesson.</li>
 <p>Take a break. If you can, move around and look at something away from
 your screen to give your eyes a rest.</p></section><section id="aio-formative-assessment"><p>Content from <a href="formative-assessment.html">Stay on Target</a></p>
 <hr>
-<p> Last updated on 2023-09-12 | 
+<p> Last updated on 2023-09-26 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/formative-assessment.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 65 minutes </p>
@@ -2921,12 +2921,51 @@ instructor may decide to review a particular concept or change the pace
 of instruction. At the same time, learners get feedback about what they
 have misunderstood and what they need to focus their study efforts on -
 we call this <strong>guided practice</strong>.</p>
-<p>When designing a lesson, for diagnostic assessments you can think
-about problems or questions from previous training events and what
-people struggled with, or think about your own misconceptions in the
-past or ask colleagues about their experiences. You should aim to create
-all your assessments before you have written the explanatory content of
-your lesson (recall Nicholl’s <a href="https://en.wikipedia.org/wiki/Backward_design" class="external-link">backward
+<div class="section level3">
+<h3 id="choosing-plausible-distractors">Choosing Plausible Distractors<a class="anchor" aria-label="anchor" href="#choosing-plausible-distractors"></a>
+</h3>
+<p>When using a multiple choice question for formative assessment, the
+incorrect answers you provide as options are <em>at least as
+important</em> as the correct answer because they offer the most useful
+insight into the mental model your audience is building. But choosing
+incorrect answers can be difficult, especially early in a lesson where
+you are more likely to encounter misconceptions that learners have
+arrived with as opposed to those they have picked up while following the
+lesson.</p>
+<div id="prior-knowledge-and-plausible-distractors" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="prior-knowledge-and-plausible-distractors" class="callout-inner">
+<h3 class="callout-title">Prior Knowledge and Plausible Distractors<a class="anchor" aria-label="anchor" href="#prior-knowledge-and-plausible-distractors"></a>
+</h3>
+<div class="callout-content">
+<p>When identifying plausible distractors, it is essential to consider
+the prior knowledge you expect learners to have of your lesson
+topic.</p>
+<p>The plausible distractors in the MCQ example above are chosen on the
+assumption that learners have been taught addition by “carrying”
+numbers: the incorrect answers are designed to diagnose misconceptions
+associated with that method.</p>
+<p>However, as <a href="https://github.com/carpentries/instructor-training/issues/1403" class="external-link">pointed
+out by Maneesha Sane</a>, if a learner has been taught to add numbers by
+another method, e.g. first rounding them up or down to values that are
+more easy to remember and combine (e.g. 27 to 30), they might have
+misconceptions that cause them to arrive at an answer that is incorrect
+but not represented in the MCQ options.</p>
+</div>
+</div>
+</div>
+<p>To help identify plausible distractors, you can think about problems
+or questions from previous training events and what people struggled
+with, think about your own misconceptions in the past, or ask colleagues
+about their experiences. It is important to consider <a href="https://carpentries.github.io/instructor-training/04-expertise.html#mind-the-gap" class="external-link"><em>expert
+awareness gap</em></a>, the phenomenon where experts in a topic forget
+what it is like not to have a good mental model of it. Observing how
+others learn your topic and asking colleagues to review lesson content
+as you design it can help mitigate this.</p>
+<p>You should aim to create all your assessments before you have written
+the explanatory content of your lesson (recall Nicholl’s <a href="https://en.wikipedia.org/wiki/Backward_design" class="external-link">backward
 design</a>). These assessments will guide your lesson design process by
 knowing exactly which knowledge you’d expect from your learners at any
 point in the lesson.</p>
@@ -3000,6 +3039,7 @@ learning.</li>
 formative assessments (such as multiple choice questions) can help us
 with this.</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -3825,7 +3865,7 @@ lesson content can influence Learner motivation</a>.<a href="#fnref2" class="foo
 <p>Take a break. If you can, move around and look at something away from
 your screen to give your eyes a rest.</p></section><section id="aio-explanation"><p>Content from <a href="explanation.html">How to Write a Lesson</a></p>
 <hr>
-<p> Last updated on 2023-08-21 | 
+<p> Last updated on 2023-09-26 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/explanation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 70 minutes </p>
@@ -4997,7 +5037,7 @@ training today</li>
   Adding Design Notes to the Lesson Site
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>If trainees would like to add the Design Notes document they have
 been working on to their lesson site, they can do the following:</p>
@@ -5939,7 +5979,7 @@ such as issues, pull requests, mentions, etc.</p>
   Time management tip: share the next callout, do not teach it
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The next callout contains a lot of information, and can require a lot
 of time to discuss fully while training. We recommend that you do not
