@@ -1099,7 +1099,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1116,7 +1116,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1482,7 +1482,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -2240,10 +2240,14 @@ lines, down to the blank line under the closing string of the
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 
-<p>Now create a new file in the <code>episodes</code> folder and, based
-on the episodes you planned out in <em>Defining lesson objectives</em>,
+<p>Now create a new file in the <code>episodes</code> folder. Based on
+the episodes you planned out in <em>Defining lesson objectives</em>,
 choose a name for it that concisely describes the intended content,
-e.g. <code>data-visualisation.md</code>.</p>
+e.g. <code>data-visualisation.md</code> (or
+<code>data-visualisation.Rmd</code> for a lesson based on R Markdown).
+It is vital to include the file extension when naming this file: only
+files with the <code>.md</code> or <code>.Rmd</code> extensions will be
+built into webpages by the lesson infrastructure.</p>
 <p>For page content, paste those first 19 lines of the
 <code>introduction.md</code> file and:</p>
 <ol style="list-style-type: decimal">
@@ -2529,7 +2533,7 @@ the previous step, and edit your objectives accordingly.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>After you have defined the episode objectives, you can add them to
 the <code>objectives</code> div as follows:</p>
@@ -2574,7 +2578,7 @@ earlier.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>In <code>index.md</code>:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -4034,7 +4038,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
