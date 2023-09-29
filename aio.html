@@ -1099,7 +1099,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1116,7 +1116,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1482,7 +1482,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -2327,6 +2327,63 @@ time.</p>
 <p>We have now learned everything we need to be able to use The
 Carpentries Workbench, and our focus can return to the process of
 developing a new lesson.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Troubleshooting the Lesson Build Process
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>Sometimes, formatting errors and typos in the files of your
+repository can cause the process that builds your lesson website to
+fail.</p>
+<p>You will likely first notice the failure to build the lesson if the
+lesson website is not showing the changes you made. You may also receive
+an email from GitHub about the build failure if that is your preferred
+way of receiving notifications (but it may take you some time to realise
+this). The good thing is that GitHub keeps your previous lesson version
+online until the error is fixed and a new build is completed
+successfully. If you are not yet familiar with the GitHub interface, it
+can be difficult to pinpoint the problem.</p>
+<p>Here are some points of advice that you can follow to help find and
+fix the problem when you notice the build process fail.</p>
+<ul>
+<li>When you first notice that there is a problem, <strong>stop</strong>
+editing your lesson: any subsequent changes that you make will not be
+included in your lesson site until the problem is fixed, and might
+introduce additional issues, making it more difficult to find the
+original cause.</li>
+<li>
+<strong>Look at the history</strong> of commits (the link with a
+reversing stopwatch icon and “NN commits” at the top of the listing of
+files and folders in the repository homepage). Is there a place where
+the build has a red cross instead of green circle? If so, click on that
+commit to look at the “diff” (where it shows which lines have been
+modified). The error is likely to have been introduced by these
+changes.</li>
+<li>
+<strong>Ask for help</strong>: you can open an issue on your
+repository and tag a member of The Carpentries team to ask for help
+finding the problem. Alternatively, you can also ask for help in The
+Carpentries Slack workspace. (More about communication channels for
+discussing lesson development coming later in this training.)</li>
+<li>Waiting for the GitHub Actions process that builds the website to
+run can be tedious, and slow down the process of troubleshooting: it can
+take a few minutes for the process to reach the point where it
+encounters the problem. It can be helpful to download the files for your
+lesson and try to <strong>build a version of the website on your local
+computer</strong>, where the build process will be much faster. The
+Workbench documentation provides <a href="https://carpentries.github.io/sandpaper-docs/#installation" class="external-link">instructions
+for installing the infrastructure</a> and <a href="https://carpentries.github.io/sandpaper-docs/introduction.html#preview" class="external-link">building
+a local preview of the lesson website</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -3966,7 +4023,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
@@ -6106,7 +6163,7 @@ interactions can influence the progress you make.</p>
   For Teams of Collaborators
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>As a team read <a href="https://github.com/carpentries/lesson-development-training/blob/main/GOVERNANCE.md" class="external-link">the
 description of project governance for this training curriculum</a>.</p>
@@ -6138,7 +6195,7 @@ project progress in your team.)</p>
   For Lesson Developers Working Alone
   </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>The <a href="https://coast.noaa.gov/ddb/" class="external-link"><em>Dealing with Disruptive
 Behaviours</em></a> resource from the US National Oceanic and

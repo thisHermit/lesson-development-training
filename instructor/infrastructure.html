@@ -634,7 +634,7 @@ directory.</figcaption></figure><div id="accordionInstructor1" class="accordion 
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Remind learners to paste URL of their lesson repository and the
 rendered version of the lesson to the collaborative document.</p>
@@ -720,7 +720,7 @@ website to be generated.</p>
   Show the Default Lesson Site
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>For trainees unfamiliar with the relationship between a source
 repository and rendered website, it is important to show the default
@@ -954,7 +954,7 @@ lines, down to the blank line under the closing string of the
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
 <div class="accordion-body">
 <p>Be careful here to ensure that participants who are collaborating on
 the same repository do not create conflicts e.g. by editing the same
@@ -1058,6 +1058,61 @@ time.</p>
 <p>We have now learned everything we need to be able to use The
 Carpentries Workbench, and our focus can return to the process of
 developing a new lesson.</p>
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
+  Troubleshooting the Lesson Build Process
+  </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
+<p>Sometimes, formatting errors and typos in the files of your
+repository can cause the process that builds your lesson website to
+fail.</p>
+<p>You will likely first notice the failure to build the lesson if the
+lesson website is not showing the changes you made. You may also receive
+an email from GitHub about the build failure if that is your preferred
+way of receiving notifications (but it may take you some time to realise
+this). The good thing is that GitHub keeps your previous lesson version
+online until the error is fixed and a new build is completed
+successfully. If you are not yet familiar with the GitHub interface, it
+can be difficult to pinpoint the problem.</p>
+<p>Here are some points of advice that you can follow to help find and
+fix the problem when you notice the build process fail.</p>
+<ul><li>When you first notice that there is a problem, <strong>stop</strong>
+editing your lesson: any subsequent changes that you make will not be
+included in your lesson site until the problem is fixed, and might
+introduce additional issues, making it more difficult to find the
+original cause.</li>
+<li>
+<strong>Look at the history</strong> of commits (the link with a
+reversing stopwatch icon and “NN commits” at the top of the listing of
+files and folders in the repository homepage). Is there a place where
+the build has a red cross instead of green circle? If so, click on that
+commit to look at the “diff” (where it shows which lines have been
+modified). The error is likely to have been introduced by these
+changes.</li>
+<li>
+<strong>Ask for help</strong>: you can open an issue on your
+repository and tag a member of The Carpentries team to ask for help
+finding the problem. Alternatively, you can also ask for help in The
+Carpentries Slack workspace. (More about communication channels for
+discussing lesson development coming later in this training.)</li>
+<li>Waiting for the GitHub Actions process that builds the website to
+run can be tedious, and slow down the process of troubleshooting: it can
+take a few minutes for the process to reach the point where it
+encounters the problem. It can be helpful to download the files for your
+lesson and try to <strong>build a version of the website on your local
+computer</strong>, where the build process will be much faster. The
+Workbench documentation provides <a href="https://carpentries.github.io/sandpaper-docs/#installation" class="external-link">instructions
+for installing the infrastructure</a> and <a href="https://carpentries.github.io/sandpaper-docs/introduction.html#preview" class="external-link">building
+a local preview of the lesson website</a>.</li>
+</ul></div>
+</div>
+</div>
+</div>
 <div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
@@ -1066,7 +1121,7 @@ developing a new lesson.</p>
   Troubleshoot Lesson Builds (~10 mins)
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
 <div class="accordion-body">
 <p>This is a good opportunity to pause and check in on how well
 trainees’ lesson builds are running. If anyone is having trouble with
