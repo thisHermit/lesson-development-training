@@ -1099,7 +1099,7 @@ lesson?</li>
   Part 2a (for groups collaborating on the same lesson, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1116,7 +1116,7 @@ lesson?</p>
   Part 2b (for participants developing their lesson alone, 10 minutes)
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1977,15 +1977,11 @@ will move on to complete the basic setup of the lesson.</p>
 <div class="section level3">
 <h3 id="configuring-a-lesson-repository">Configuring a Lesson Repository<a class="anchor" aria-label="anchor" href="#configuring-a-lesson-repository"></a>
 </h3>
-<div class="section level4">
-<h4 id="activating-github-pages">Activating GitHub Pages<a class="anchor" aria-label="anchor" href="#activating-github-pages"></a>
-</h4>
-<p>We need to tell GitHub to begin serving the lesson website via GitHub
-Pages. To do this, navigate to <em>Settings</em>, then choose
-<em>Pages</em> from the left sidebar. Under <em>Source</em>, choose the
-<code>gh-pages</code> branch, leave the folder set to
-<code>/ (root)</code>, and click <em>Save</em>. You may copy the URL in
-this box, this will be the address of your lesson site.</p>
+<p>Since the lesson was created with a <code>gh-pages</code> branch. It
+should already be generating a rendered version of the template
+repository. If it isn’t, the instructor should work with groups to turn
+on GitHub Pages.</p>
+
 <div id="which-branch-to-use" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -2005,17 +2001,16 @@ actions-user account.</p>
 </div>
 </div>
 </div>
-<p>Returning to the repository home page (e.g. by clicking the name of
-the project near the top left of the window), click the gear wheel icon
-near the top right, to edit the <em>About</em> box. Check the box that
-says “Use your GitHub Pages website” to add the address of your lesson
-site to the About box.</p>
+<p>On the repository home page (e.g. by clicking the name of the project
+near the top left of the window), click the gear wheel icon near the top
+right, to edit the <em>About</em> box. Check the box that says “Use your
+GitHub Pages website” to add the address of your lesson site to the
+About box.</p>
 <p>After following these steps, when you navigate to the pages URL, you
 should see a lesson website with The Carpentries logo and “Lesson Title”
 in the top-left corner. You may need to wait a few minutes for the
 website to be generated.</p>
 
-</div>
 <div class="section level4">
 <h4 id="config-yaml">
 <code>config.yaml</code><a class="anchor" aria-label="anchor" href="#config-yaml"></a>
@@ -2367,7 +2362,7 @@ developing a new lesson.</p>
   Troubleshooting the Lesson Build Process
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -4077,7 +4072,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It

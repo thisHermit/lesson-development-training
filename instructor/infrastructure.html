@@ -634,7 +634,7 @@ directory.</figcaption></figure><div id="accordionInstructor1" class="accordion 
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Remind learners to paste URL of their lesson repository and the
 rendered version of the lesson to the collaborative document.</p>
@@ -676,14 +676,30 @@ will move on to complete the basic setup of the lesson.</p>
 </div>
 <div class="section level3">
 <h3 id="configuring-a-lesson-repository">Configuring a Lesson Repository<a class="anchor" aria-label="anchor" href="#configuring-a-lesson-repository"></a></h3>
-<div class="section level4">
-<h4 id="activating-github-pages">Activating GitHub Pages<a class="anchor" aria-label="anchor" href="#activating-github-pages"></a></h4>
+<p>Since the lesson was created with a <code>gh-pages</code> branch. It
+should already be generating a rendered version of the template
+repository. If it isn’t, the instructor should work with groups to turn
+on GitHub Pages.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Activating GitHub Pages
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
 <p>We need to tell GitHub to begin serving the lesson website via GitHub
 Pages. To do this, navigate to <em>Settings</em>, then choose
 <em>Pages</em> from the left sidebar. Under <em>Source</em>, choose the
 <code>gh-pages</code> branch, leave the folder set to
 <code>/ (root)</code>, and click <em>Save</em>. You may copy the URL in
 this box, this will be the address of your lesson site.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="which-branch-to-use" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -703,24 +719,24 @@ actions-user account.</p>
 </div>
 </div>
 </div>
-<p>Returning to the repository home page (e.g. by clicking the name of
-the project near the top left of the window), click the gear wheel icon
-near the top right, to edit the <em>About</em> box. Check the box that
-says “Use your GitHub Pages website” to add the address of your lesson
-site to the About box.</p>
+<p>On the repository home page (e.g. by clicking the name of the project
+near the top left of the window), click the gear wheel icon near the top
+right, to edit the <em>About</em> box. Check the box that says “Use your
+GitHub Pages website” to add the address of your lesson site to the
+About box.</p>
 <p>After following these steps, when you navigate to the pages URL, you
 should see a lesson website with The Carpentries logo and “Lesson Title”
 in the top-left corner. You may need to wait a few minutes for the
 website to be generated.</p>
-<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
-  <h3 class="accordion-header" id="headingInstructor2">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
   Orientation for GitHub Novices
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>For trainees unfamiliar with the relationship between a source
 repository and rendered website, it is important to show the default
@@ -729,7 +745,6 @@ version of the lesson website now i.e. before beginning to edit
 <li>It is also recommended to take time at this point to demonstrate
 step-by-step how to edit files in the GitHub web interface.</li>
 </ol></div>
-</div>
 </div>
 </div>
 </div>
@@ -958,15 +973,15 @@ lines, down to the blank line under the closing string of the
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
-<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
-  <h3 class="accordion-header" id="headingInstructor3">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
+  <h3 class="accordion-header" id="headingInstructor4">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>Be careful here to ensure that participants who are collaborating on
 the same repository do not create conflicts e.g. by editing the same
@@ -1082,7 +1097,7 @@ developing a new lesson.</p>
   Troubleshooting the Lesson Build Process
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -1129,15 +1144,15 @@ a local preview of the lesson website</a>.</li>
 </div>
 </div>
 </div>
-<div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
+<div id="accordionInstructor5" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
-  <h3 class="accordion-header" id="headingInstructor4">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor5" aria-expanded="false" aria-controls="collapseInstructor5">
+  <h3 class="accordion-header" id="headingInstructor5">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
   Troubleshoot Lesson Builds (~10 mins)
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
 <div class="accordion-body">
 <p>This is a good opportunity to pause and check in on how well
 trainees’ lesson builds are running. If anyone is having trouble with
