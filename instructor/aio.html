@@ -1480,7 +1480,7 @@ they are.</p>
   Markdown Table Template for Exercise
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You may find this template of a Markdown table useful to share with
 your trainees before they complete the next exercise.</p>
@@ -1569,7 +1569,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -2034,7 +2034,7 @@ directory.</figcaption></figure><div id="accordionInstructor1" class="accordion 
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Remind learners to paste URL of their lesson repository and the
 rendered version of the lesson to the collaborative document.</p>
@@ -2095,7 +2095,7 @@ instructor should work with groups to activate GitHub Pages.</p>
   Activating GitHub Pages
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>We need to tell GitHub to begin serving the lesson website via GitHub
 Pages. To do this, navigate to <em>Settings</em>, then choose
@@ -2107,12 +2107,12 @@ this box, this will be the address of your lesson site.</p>
 </div>
 </div>
 </div>
-<div id="which-branch-to-use" class="callout callout">
+<div id="which-branch-and-github-actions" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="which-branch-to-use" class="callout-inner">
-<h3 class="callout-title">Which branch to use?<a class="anchor" aria-label="anchor" href="#which-branch-to-use"></a>
+<div id="which-branch-and-github-actions" class="callout-inner">
+<h3 class="callout-title">Which Branch and GitHub Actions<a class="anchor" aria-label="anchor" href="#which-branch-and-github-actions"></a>
 </h3>
 <div class="callout-content">
 <p>Although we configure GitHub Pages to serve the lesson website from
@@ -2123,6 +2123,12 @@ future, when you open Pull Requests to update the lesson content, these
 should also be made to <code>main</code>. The <code>gh-pages</code>
 branch should never be modified by anyone other than the automated
 actions-user account.</p>
+<p>To see the rendering of the <code>gh-pages</code> branch by the
+automated actions-user, you can click the “Actions” tab from the main
+repo page. This tab shows the actions triggered by each commit and if
+they are in-progress or completed (sucessfully or with an error). You
+can also see the details of actions in more depth by clicking on an
+individual commit in this page.</p>
 </div>
 </div>
 </div>
@@ -2143,7 +2149,7 @@ website to be generated.</p>
   Orientation for GitHub Novices
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>For trainees unfamiliar with the relationship between a source
@@ -2405,7 +2411,7 @@ lines, down to the blank line under the closing string of the
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>Be careful here to ensure that participants who are collaborating on
 the same repository do not create conflicts e.g. by editing the same
@@ -2524,7 +2530,7 @@ developing a new lesson.</p>
   Troubleshooting the Lesson Build Process
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -2581,12 +2587,15 @@ a local preview of the lesson website</a>.</li>
   Troubleshoot Lesson Builds (~10 mins)
   </h3>
 </button>
-<div id="collapseInstructor5" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor5" aria-labelledby="headingInstructor5">
+<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
 <div class="accordion-body">
 <p>This is a good opportunity to pause and check in on how well
 trainees’ lesson builds are running. If anyone is having trouble with
 their workflows, ask them to share their screen and try following the
 troubleshooting steps to diagnose and fix the issue.</p>
+<p>This is also a good opporunity to show what the GitHub actions look
+like when they are in progress, succeed, or fail if you haven’t
+already.</p>
 </div>
 </div>
 </div>
@@ -3839,7 +3848,7 @@ data collected about an individual or groups of people.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Outline covering the above paragraph - also used in CodiMD
 template.</p>
@@ -4130,7 +4139,7 @@ discussion based on the responses.</p>
   Trainer Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>To get started on the discussion part, try reading out an interesting
 response and asking for more detail from the trainee who wrote it. Ask
@@ -4213,7 +4222,7 @@ on in section <a href="preparing.html">“Preparing to Teach”</a>.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>This is the hidden note! Thanks for developing new incubator lessons
 for others to use!</p>
@@ -4334,7 +4343,7 @@ Global Monitoring Laboratory, Boulder, Colorado, USA</em></a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The third option, “Line graph of increasing carbon dioxide in ppm at
 the Mauna Loa Observatory from 1958 to present”, is the best option. It
@@ -4356,7 +4365,7 @@ and a link to the data instead.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>May want to point out that the answers in the current version of this
 exercise do not have diagnostic power.</p>
@@ -5299,7 +5308,7 @@ trialling lesson material.</li>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>This episode picks-up after a long break in training for learners,
 you may need to remind them of the following expectations as part of
@@ -5352,7 +5361,7 @@ the quality of your lesson.</p>
   Discussion format
   </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>For online trainings, Trainers have found it beneficial to give
 participants the first 5 minutes together in a breakout room, to
@@ -6174,7 +6183,7 @@ such as issues, pull requests, mentions, etc.</p>
   Time management tip: share the next callout, do not teach it
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The next callout contains a lot of information, and can require a lot
 of time to discuss fully while training. We recommend that you do not

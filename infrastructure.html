@@ -664,12 +664,12 @@ will move on to complete the basic setup of the lesson.</p>
 a rendered version of your lesson from this branch. If it isn’t, the
 instructor should work with groups to activate GitHub Pages.</p>
 
-<div id="which-branch-to-use" class="callout callout">
+<div id="which-branch-and-github-actions" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="which-branch-to-use" class="callout-inner">
-<h3 class="callout-title">Which branch to use?<a class="anchor" aria-label="anchor" href="#which-branch-to-use"></a>
+<div id="which-branch-and-github-actions" class="callout-inner">
+<h3 class="callout-title">Which Branch and GitHub Actions<a class="anchor" aria-label="anchor" href="#which-branch-and-github-actions"></a>
 </h3>
 <div class="callout-content">
 <p>Although we configure GitHub Pages to serve the lesson website from
@@ -680,6 +680,12 @@ future, when you open Pull Requests to update the lesson content, these
 should also be made to <code>main</code>. The <code>gh-pages</code>
 branch should never be modified by anyone other than the automated
 actions-user account.</p>
+<p>To see the rendering of the <code>gh-pages</code> branch by the
+automated actions-user, you can click the “Actions” tab from the main
+repo page. This tab shows the actions triggered by each commit and if
+they are in-progress or completed (sucessfully or with an error). You
+can also see the details of actions in more depth by clicking on an
+individual commit in this page.</p>
 </div>
 </div>
 </div>
@@ -1026,7 +1032,7 @@ developing a new lesson.</p>
   Troubleshooting the Lesson Build Process
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
