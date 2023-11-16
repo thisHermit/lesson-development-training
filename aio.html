@@ -1512,7 +1512,7 @@ how each objective might be improved.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1850,7 +1850,7 @@ into chunks</li>
 <p>Take a break. If you can, move around and look at something away from
 your screen to give your eyes a rest.</p></section><section id="aio-infrastructure"><p>Content from <a href="infrastructure.html">The Carpentries Workbench</a></p>
 <hr>
-<p> Last updated on 2023-10-03 | 
+<p> Last updated on 2023-11-16 | 
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2373,19 +2373,10 @@ zero for now</li>
 <div class="section level3">
 <h3 id="adding-a-new-episode-to-the-lesson-navigation">Adding a new episode to the lesson navigation<a class="anchor" aria-label="anchor" href="#adding-a-new-episode-to-the-lesson-navigation"></a>
 </h3>
-<p>A few minutes after the new file has been created, a new episode page
-should become available on your lesson site. To check, navigate with
-your web browser to
-<code>https://username.github.io/lesson-name/episode-name.html</code>,
-where <code>https://username.github.io/lesson-name/</code> is the URL of
-your lesson homepage, and <code>episode-name</code> is the name of the
-new episode file you created (without the <code>.md</code> or
-<code>.Rmd</code> extension).</p>
-<p>However, this new episode will not yet appear in the navigation of
-your lesson site. To enable this, we need to specify where the episode
-should appear in the order of the lesson. That episode order is defined
-in the <code>episodes</code> field of the <code>config.yaml</code>
-file:</p>
+<p>This new episode will not yet appear in the navigation of your lesson
+site. To enable this, we need to specify where the episode should appear
+in the order of the lesson. That episode order is defined in the
+<code>episodes</code> field of the <code>config.yaml</code> file:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2405,7 +2396,7 @@ file:</p>
 </div>
 <p>After the lesson site has been rebuilt on GitHub, you should see the
 episode title appear under <em>Chapters</em> in the left sidebar
-navigation of your lesson site after refreshing the webpage Clicking on
+navigation of your lesson site after refreshing the webpage. Clicking on
 that title will take you to the episode page built from the file you
 created. At the top of the page body, you will find the episode title
 and an <em>Overview</em> box containing a list of the questions and
@@ -2441,7 +2432,7 @@ developing a new lesson.</p>
   Troubleshooting the Lesson Build Process
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -2624,7 +2615,7 @@ the previous step, and edit your objectives accordingly.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>After you have defined the episode objectives, you can add them to
 the <code>objectives</code> div as follows:</p>
@@ -2669,7 +2660,7 @@ earlier.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>In <code>index.md</code>:</p>
 <div class="codewrapper sourceCode" id="cb2">
