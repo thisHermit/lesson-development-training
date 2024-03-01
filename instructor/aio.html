@@ -633,7 +633,7 @@ workshop.</li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You might like to make a copy of <a href="https://codimd.carpentries.org/cldt-notes-template" class="external-link">the template
 CodiMD notetaking page</a> and share your link with trainees so that you
@@ -741,15 +741,16 @@ them about it.</p>
 <p>The main objective of this training is to teach you the skills you
 need to design and develop an effective lesson, in collaboration with
 other members of the community.</p>
-<figure><img src="../fig/cldt-structure.svg" style="width:67.0%" alt="A graphical representation of the schedule and structure of collaborative lesson development training." class="figure mx-auto d-block"><figcaption>Collaborative Lesson Development Training is taught
-over three days (six half days), with an extended break between the
-first two days (“part 1”) and the last day (“part 2”). The training in
-part 1 focusses on good practices in lesson design and development, and
-the concepts and skills needed to build a lesson website with The
+<figure><img src="../fig/cldt-structure.svg" style="width:67.0%" alt="A graphical representation of the schedule and structure of collaborative lesson development training." class="figure mx-auto d-block"><div class="figcaption">Collaborative Lesson Development Training is
+taught over three days (six half days), with an extended break between
+the first two days (“part 1”) and the last day (“part 2”). The training
+in part 1 focusses on good practices in lesson design and development,
+and the concepts and skills needed to build a lesson website with The
 Carpentries lesson infrastructure. Part 2 of the training begins with a
 reflective discussion of lesson deisgn and iterative development, before
 shifting focus to the skills required for effective collaboration on
-open source projects.</figcaption></figure><p>During the training, we will introduce the steps you can take to
+open source projects.</div>
+</figure><p>During the training, we will introduce the steps you can take to
 design and develop a lesson to meet the needs of your target audience,
 and give you time to begin implementing those steps during the workshop
 itself. By the end of the training, you can expect to have defined an
@@ -784,12 +785,12 @@ remain useful in the long term, if they are developed collaboratively.
 This training will discuss some of the ways that you can welcome new
 collaborators and work effectively and efficiently with those you
 already have.</p>
-<div id="learning-how-to-teach-a-lesson" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="learning-how-to-teach-a-lesson" class="callout-inner">
-<h3 class="callout-title">Learning How to Teach a Lesson<a class="anchor" aria-label="anchor" href="#learning-how-to-teach-a-lesson"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="learning-how-to-teach-a-lesson">Learning How to Teach a Lesson<a class="anchor" aria-label="anchor" href="#learning-how-to-teach-a-lesson"></a>
 </h3>
 <div class="callout-content">
 <p>This training will focus on the content - how to prepare a good
@@ -878,10 +879,11 @@ outcomes</li>
 <li>Evaluate chosen outcomes, experiences, and content based on this
 assessment</li>
 </ol>
-<figure><img src="../fig/nicholls-five-phases.svg" style="width:67.0%" alt="A flow diagram presenting the Nicholls' five phases of curriculum design as a cycle." class="figure mx-auto d-block"><figcaption>Nicholls’ five phases of curriculum design, presented
-as a cycle to reflect that all aspects of the design should be revisited
-in response to the results of the evaluation that takes place at step
-5.</figcaption></figure><p>The last two phases of Nicholls’ paradigm involve assessing learner
+<figure><img src="../fig/nicholls-five-phases.svg" style="width:67.0%" alt="A flow diagram presenting the Nicholls' five phases of curriculum design as a cycle." class="figure mx-auto d-block"><div class="figcaption">Nicholls’ five phases of curriculum design,
+presented as a cycle to reflect that all aspects of the design should be
+revisited in response to the results of the evaluation that takes place
+at step 5.</div>
+</figure><p>The last two phases of Nicholls’ paradigm involve assessing learner
 progress towards the desired learning outcomes and evaluating the stated
 objectives and current content in light of the results of that
 assessment. In The Carpentries, most workshops are relatively
@@ -904,9 +906,10 @@ next</li>
 <li>(After the break) evaluate how closely the outcomes meet the
 objectives</li>
 </ol>
-<figure><img src="../fig/cldt-design-process.svg" style="width:67.0%" alt="A flow diagram presenting the process of lesson design and development used in this training." class="figure mx-auto d-block"><figcaption>An overview of the iterative process of lesson design
-and development , adapted from Nicholl’s five phases, that will be
-presented in this training.</figcaption></figure><p>Note the cyclical nature of this process: you will complete one
+<figure><img src="../fig/cldt-design-process.svg" style="width:67.0%" alt="A flow diagram presenting the process of lesson design and development used in this training." class="figure mx-auto d-block"><div class="figcaption">An overview of the iterative process of lesson
+design and development , adapted from Nicholl’s five phases, that will
+be presented in this training.</div>
+</figure><p>Note the cyclical nature of this process: you will complete one
 iteration through this cycle during this training (though probably for a
 limited part of your lesson, rather than the whole thing). Note also
 that teaching the content is an essential intermediate step in the
@@ -972,7 +975,8 @@ undergo many iterations before it reaches a relatively stable state. To
 reflect this, we encourage lesson developers to indicate the status of
 their lesson by labelling its progress through a <em>lesson life
 cycle</em>:</p>
-<figure><img src="../fig/life_cycle.png" alt="Diagram of the life cycle of a lesson in The Carpentries ecosystem. A lesson is proposed at the beginning of the pre-alpha stage. It enters alpha when it is taught for the first time. In beta, it is taught by other instructors. A full release of the lesson is made when it is stable. Pilot workshops take place during the alpha and beta phases." class="figure mx-auto d-block"><figcaption>The life cycle of a lesson</figcaption></figure><p>Each life cycle stage indicates the level of maturity of a
+<figure><img src="../fig/life_cycle.png" alt="Diagram of the life cycle of a lesson in The Carpentries ecosystem. A lesson is proposed at the beginning of the pre-alpha stage. It enters alpha when it is taught for the first time. In beta, it is taught by other instructors. A full release of the lesson is made when it is stable. Pilot workshops take place during the alpha and beta phases." class="figure mx-auto d-block"><div class="figcaption">The life cycle of a lesson</div>
+</figure><p>Each life cycle stage indicates the level of maturity of a
 lesson:</p>
 <ul>
 <li>
@@ -1149,7 +1153,7 @@ different priorities, interests, and challenges than your own.</p>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Lesson Design Notes Document</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>At this point, it may be helpful to share <a href="https://codimd.carpentries.org/HPwUE3FnTeSQJ9-_5EfU7Q?view#" class="external-link">the
 template for a Lesson Design Notes document</a> with trainees. They can
@@ -1187,7 +1191,7 @@ lesson?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Part 2a (for groups collaborating on the same lesson, 10 minutes)</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Share your answers with your collaborators. How do they compare? If
 you have identified different audiences, are they compatible? Or would
@@ -1202,7 +1206,7 @@ lesson?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Part 2b (for participants developing their lesson alone, 10 minutes)</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Write 1-2 diagnostic questions, for use before the lesson is taught,
 to help you assess whether a respondent falls within the intended
@@ -1211,12 +1215,12 @@ audience for your lesson.</p>
 </div>
 </div>
 </div>
-<div id="thinking-more-about-target-audience" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="thinking-more-about-target-audience" class="callout-inner">
-<h3 class="callout-title">Thinking more about target audience<a class="anchor" aria-label="anchor" href="#thinking-more-about-target-audience"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="thinking-more-about-target-audience">Thinking more about target audience<a class="anchor" aria-label="anchor" href="#thinking-more-about-target-audience"></a>
 </h3>
 <div class="callout-content">
 <p>There is more to consider about your target audience than we could
@@ -1365,9 +1369,10 @@ criteria.</li>
 </div>
 </div>
 </div>
-<figure><img src=".././fig/cldt-step-1.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development,  adapted from Nicholl's five phases, with step 1, 'Define desired learning outcomes' highlighted." class="figure mx-auto d-block"><figcaption>In this episode we will begin the first step of our
-iterative design process: defining the skills and knowledge we want
-learners to leave with.</figcaption></figure><p>At this stage of the training, you should have a clear idea of who
+<figure><img src=".././fig/cldt-step-1.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development, adapted from Nicholl's five phases, with step 1, 'Define desired learning outcomes' highlighted." class="figure mx-auto d-block"><div class="figcaption">In this episode we will begin the first step of
+our iterative design process: defining the skills and knowledge we want
+learners to leave with.</div>
+</figure><p>At this stage of the training, you should have a clear idea of who
 the target audience is for your lesson, and what knowledge, skills, and
 abilities you expect them to arrive with. Now it is time to consider the
 additional knowledge, skills, and abilities they will have by the time
@@ -1416,8 +1421,9 @@ could use up valuable time or distract instructors and learners.</p>
 </section><section id="what-does-an-objective-look-like"><h2 class="section-heading">What Does an Objective Look Like?<a class="anchor" aria-label="anchor" href="#what-does-an-objective-look-like"></a>
 </h2>
 <hr class="half-width">
-<figure><img src="../fig/objective.svg" alt='An example learning objective, "import data into an indexed DataFrame with read_csv", with emphasis placed on the action verb ("import") and the specificity ("indexed") of the objective.' class="figure mx-auto d-block"><figcaption>This diagram highlights the most important elements
-of a learning objective.</figcaption></figure><p>Objectives can be defined for a lesson as a whole - what should
+<figure><img src="../fig/objective.svg" alt='An example learning objective, "import data into an indexed DataFrame with read_csv", with emphasis placed on the action verb ("import") and the specificity ("indexed") of the objective.' class="figure mx-auto d-block"><div class="figcaption">This diagram highlights the most important
+elements of a learning objective.</div>
+</figure><p>Objectives can be defined for a lesson as a whole - what should
 learners be able to do at the end of a workshop teaching this lesson? -
 and for individual sections within it - what should learners be able to
 do after following this particular part of the lesson? The objectives
@@ -1509,18 +1515,18 @@ they are.</p>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Markdown Table Template for Exercise</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You may find this template of a Markdown table useful to share with
 your trainees before they complete the next exercise.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>| Objective | Action verb? | Specific | Measurable | Attainable |</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>|-----------|--------------|----------|------------|------------|</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>| 1         |              |          |            |            |</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| 2         |              |          |            |            |</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>| 3         |              |          |            |            |</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="pp">|</span> Objective <span class="pp">|</span> Action verb? <span class="pp">|</span> Specific <span class="pp">|</span> Measurable <span class="pp">|</span> Attainable <span class="pp">|</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="pp">|-----------|--------------|----------|------------|------------|</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="pp">|</span> 1         <span class="pp">|</span>              <span class="pp">|</span>          <span class="pp">|</span>            <span class="pp">|</span>            <span class="pp">|</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="pp">|</span> 2         <span class="pp">|</span>              <span class="pp">|</span>          <span class="pp">|</span>            <span class="pp">|</span>            <span class="pp">|</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="pp">|</span> 3         <span class="pp">|</span>              <span class="pp">|</span>          <span class="pp">|</span>            <span class="pp">|</span>            <span class="pp">|</span></span></code></pre>
 </div>
 <p><em>Note: if you are using the <a href="https://codimd.carpentries.org/cldt-notes-template?both#Exercise-evaluating-learning-objectives-15-minutes" class="external-link">template
 CodiMD for notes</a>, you will find <a href="https://codimd.carpentries.org/cldt-notes-template?both#Exercise-evaluating-learning-objectives-15-minutes" class="external-link">this
@@ -1596,7 +1602,7 @@ how each objective might be improved.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -1746,12 +1752,12 @@ of the lesson?</li>
 </div>
 </div>
 </div>
-<div id="advertising-your-lesson" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="advertising-your-lesson" class="callout-inner">
-<h3 class="callout-title">Advertising your lesson<a class="anchor" aria-label="anchor" href="#advertising-your-lesson"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="advertising-your-lesson">Advertising your lesson<a class="anchor" aria-label="anchor" href="#advertising-your-lesson"></a>
 </h3>
 <div class="callout-content">
 <p>These learning objectives, as well as <a href="./audience.html#defining-prerequisite-knowledge">the list of
@@ -2010,12 +2016,12 @@ websites to the world.</p>
 Workbench</strong></a>, a toolkit that converts Markdown and RMarkdown
 files into the HTML that can be served by GitHub Pages. We will use it
 now to initialise a new lesson.</p>
-<div id="a-brief-history-of-the-carpentries-lesson-infrastructure" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="a-brief-history-of-the-carpentries-lesson-infrastructure" class="callout-inner">
-<h3 class="callout-title">A Brief History of The Carpentries Lesson
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="a-brief-history-of-the-carpentries-lesson-infrastructure">A Brief History of The Carpentries Lesson
 Infrastructure<a class="anchor" aria-label="anchor" href="#a-brief-history-of-the-carpentries-lesson-infrastructure"></a>
 </h3>
 <div class="callout-content">
@@ -2096,16 +2102,17 @@ branches from the template repository
 <p>After pressing the <em>Create repository</em> button, you should be
 presented with a brand new lesson repository, like in the picture
 below.</p>
-<figure><img src="../fig/new-lesson-repository-structure.png" style="width:90.0%" alt="Directory structure of a new lesson repository created from a lesson template" class="figure mx-auto d-block"><figcaption>Directory structure of new lesson repository created
-from a lesson template. Note that new repositories created from the R
-Markdown lesson template will include an additional <code>renv/</code>
-directory.</figcaption></figure><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<figure><img src="../fig/new-lesson-repository-structure.png" style="width:90.0%" alt="Directory structure of a new lesson repository created from a lesson template" class="figure mx-auto d-block"><div class="figcaption">Directory structure of new lesson repository
+created from a lesson template. Note that new repositories created from
+the R Markdown lesson template will include an additional
+<code>renv/</code> directory.</div>
+</figure><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Remind learners to paste URL of their lesson repository and the
 rendered version of the lesson to the collaborative document.</p>
@@ -2164,7 +2171,7 @@ instructor should work with groups to activate GitHub Pages.</p>
   <h3 class="accordion-header" id="headingInstructor2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Activating GitHub Pages</h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>We need to tell GitHub to begin serving the lesson website via GitHub
 Pages. To do this, navigate to <em>Settings</em>, then choose
@@ -2176,12 +2183,12 @@ this box, this will be the address of your lesson site.</p>
 </div>
 </div>
 </div>
-<div id="which-branch-and-github-actions" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="which-branch-and-github-actions" class="callout-inner">
-<h3 class="callout-title">Which Branch and GitHub Actions<a class="anchor" aria-label="anchor" href="#which-branch-and-github-actions"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="which-branch-and-github-actions">Which Branch and GitHub Actions<a class="anchor" aria-label="anchor" href="#which-branch-and-github-actions"></a>
 </h3>
 <div class="callout-content">
 <p>Although we configure GitHub Pages to serve the lesson website from
@@ -2216,7 +2223,7 @@ website to be generated.</p>
   <h3 class="accordion-header" id="headingInstructor3">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Orientation for GitHub Novices</h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>For trainees unfamiliar with the relationship between a source
@@ -2351,20 +2358,20 @@ header, written in the same key-value pair syntax we encountered in
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">site:</span><span class="co"> sandpaper::sandpaper_site</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="an">site:</span><span class="co"> sandpaper::sandpaper_site</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">---</span></span></code></pre>
 </div>
 <p>This header configures how the site will be built by
 <code>sandpaper</code>, one of the components of The Carpentries
 Workbench, and should be left untouched. The page content begins after
 the blank line that follows this header.</p>
-<div id="markdown-rendering-on-github" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown-rendering-on-github" class="callout-inner">
-<h3 class="callout-title">Markdown Rendering on GitHub<a class="anchor" aria-label="anchor" href="#markdown-rendering-on-github"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown-rendering-on-github">Markdown Rendering on GitHub<a class="anchor" aria-label="anchor" href="#markdown-rendering-on-github"></a>
 </h3>
 <div class="callout-content">
 <p>You might have noticed by now that GitHub provides a preview of
@@ -2397,9 +2404,9 @@ earlier for your lesson, as a bullet point list to
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prerequisite 1</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>prerequisite 2</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>...</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ss">- </span>prerequisite 1</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ss">- </span>prerequisite 2</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ss">- </span>...</span></code></pre>
 </div>
 <div id="exercise-practice-editing-markdown-in-github-optional" class="callout discussion">
 <div class="callout-square">
@@ -2451,24 +2458,24 @@ lines, down to the blank line under the closing string of the
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Using Markdown"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">teaching:</span><span class="co"> 10</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">exercises:</span><span class="co"> 2</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: questions</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How do you write a lesson using Markdown and <span class="in">`{sandpaper}`</span>?</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explain how to use markdown with The Carpentries Workbench</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrate how to include pieces of code, figures, and nested challenge blocks</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Using Markdown"</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="an">teaching:</span><span class="co"> 10</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="an">exercises:</span><span class="co"> 2</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: questions</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="ss">- </span>How do you write a lesson using Markdown and <span class="in">`{sandpaper}`</span>?</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="ss">- </span>Explain how to use markdown with The Carpentries Workbench</span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="ss">- </span>Demonstrate how to include pieces of code, figures, and nested challenge blocks</span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 <div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
@@ -2476,7 +2483,7 @@ lines, down to the blank line under the closing string of the
   <h3 class="accordion-header" id="headingInstructor4">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
 <div class="accordion-body">
 <p>Be careful here to ensure that participants who are collaborating on
 the same repository do not create conflicts e.g. by editing the same
@@ -2505,23 +2512,23 @@ zero for now</li>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Episode Title"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">teaching:</span><span class="co"> 0</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">exercises:</span><span class="co"> 0</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: questions</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TODO</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TODO</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Episode Title"</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="an">teaching:</span><span class="co"> 0</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="an">exercises:</span><span class="co"> 0</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: questions</span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="ss">- </span>TODO</span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="ss">- </span>TODO</span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -2534,19 +2541,19 @@ in the order of the lesson. That episode order is defined in the
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span></code></pre>
 </div>
 <p>Add the name of the new episode file you created to this list in
 <code>config.yaml</code> and commit this change, for example:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> data-visualisation.md</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co"># Order of episodes in your lesson</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="fu">episodes</span><span class="kw">:</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="kw">-</span><span class="at"> introduction.md</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="kw">-</span><span class="at"> data-visualisation.md</span></span></code></pre>
 </div>
 <p>After the lesson site has been rebuilt on GitHub, you should see the
 episode title appear under <em>Chapters</em> in the left sidebar
@@ -2584,7 +2591,7 @@ developing a new lesson.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Troubleshooting the Lesson Build Process</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -2639,7 +2646,7 @@ a local preview of the lesson website</a>.</li>
   <h3 class="accordion-header" id="headingInstructor5">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Troubleshoot Lesson Builds (~10 mins)</h3>
 </button>
-<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
+<div id="collapseInstructor5" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor5" aria-labelledby="headingInstructor5">
 <div class="accordion-body">
 <p>This is a good opportunity to pause and check in on how well
 trainees’ lesson builds are running. If anyone is having trouble with
@@ -2792,26 +2799,26 @@ the <code>objectives</code> div as follows:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>After completing this episode, participants should be able to...</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>objective 1</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>objective 2</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>...</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::: objectives</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>After completing this episode, participants should be able to...</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ss">- </span>objective 1</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="ss">- </span>objective 2</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="ss">- </span>...</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="full-list-of-fenced-divs" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="full-list-of-fenced-divs" class="callout-inner">
-<h3 class="callout-title">Full List of Fenced Divs<a class="anchor" aria-label="anchor" href="#full-list-of-fenced-divs"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="full-list-of-fenced-divs">Full List of Fenced Divs<a class="anchor" aria-label="anchor" href="#full-list-of-fenced-divs"></a>
 </h3>
 <div class="callout-content">
 <p><a href="https://carpentries.github.io/sandpaper-docs/component-guide.html" class="external-link">The
@@ -2896,21 +2903,22 @@ have during your lesson.</li>
 </div>
 </div>
 </div>
-<figure><img src=".././fig/cldt-step-2.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development,  adapted from Nicholl's five phases, with step 2, 'Design assessments for these outcomes' highlighted." class="figure mx-auto d-block"><figcaption>In the next two episodes, we will design assessments
-to measure learners’ attainment of the objectives we defined
-previously.</figcaption></figure><p>As we have seen previously, defining objectives for a lesson (or a
+<figure><img src=".././fig/cldt-step-2.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development, adapted from Nicholl's five phases, with step 2, 'Design assessments for these outcomes' highlighted." class="figure mx-auto d-block"><div class="figcaption">In the next two episodes, we will design
+assessments to measure learners’ attainment of the objectives we defined
+previously.</div>
+</figure><p>As we have seen previously, defining objectives for a lesson (or a
 teaching episode) can help to focus your content on the most important
 learning outcomes and outline the scope of your lesson project. The goal
 of the remaining steps of lesson development is to ensure that what
 learners learn from following your lesson matches its defined objectives
 as closely as possible. To do so, you need to develop assessments to
 monitor progression towards your learning outcomes.</p>
-<div id="useful-reading" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="useful-reading" class="callout-inner">
-<h3 class="callout-title">Useful reading<a class="anchor" aria-label="anchor" href="#useful-reading"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="useful-reading">Useful reading<a class="anchor" aria-label="anchor" href="#useful-reading"></a>
 </h3>
 <div class="callout-content">
 <p>Useful further reading: <a href="https://f1000research.com/documents/9-1377" class="external-link">Course design:
@@ -3117,12 +3125,12 @@ incorrect answers can be difficult, especially early in a lesson where
 you are more likely to encounter misconceptions that learners have
 arrived with as opposed to those they have picked up while following the
 lesson.</p>
-<div id="prior-knowledge-and-plausible-distractors" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="prior-knowledge-and-plausible-distractors" class="callout-inner">
-<h3 class="callout-title">Prior Knowledge and Plausible Distractors<a class="anchor" aria-label="anchor" href="#prior-knowledge-and-plausible-distractors"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="prior-knowledge-and-plausible-distractors">Prior Knowledge and Plausible Distractors<a class="anchor" aria-label="anchor" href="#prior-knowledge-and-plausible-distractors"></a>
 </h3>
 <div class="callout-content">
 <p>When identifying plausible distractors, it is essential to consider
@@ -3156,9 +3164,9 @@ Python.</em></p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">300</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> n</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="op">-</span><span class="dv">100</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">300</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>m <span class="op">=</span> n</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>n <span class="op">=</span> <span class="op">-</span><span class="dv">100</span></span></code></pre>
 </div>
 <p><em>What is the result at the end of the above assignments?</em></p>
 <ol style="list-style-type: lower-alpha">
@@ -3492,12 +3500,12 @@ better assessed by discussions and multiple choice questions, while
 “solve,” “construct,” “test” and other higher-level cognitive skills may
 be better assessed by debugging tasks, <a href="https://teachtogether.tech/en/index.html#code-run" class="external-link">code-and-run</a>,
 or use-in-a-different-context exercises.</p>
-<div id="resources-to-explore-for-more-example-assessment-types" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="resources-to-explore-for-more-example-assessment-types" class="callout-inner">
-<h3 class="callout-title">Resources to Explore for More Example
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="resources-to-explore-for-more-example-assessment-types">Resources to Explore for More Example
 Assessment Types<a class="anchor" aria-label="anchor" href="#resources-to-explore-for-more-example-assessment-types"></a>
 </h3>
 <div class="callout-content">
@@ -3619,12 +3627,12 @@ another’s assessments.</p>
 </div>
 </div>
 </div>
-<div id="assessing-knowledge-before-a-workshop" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="assessing-knowledge-before-a-workshop" class="callout-inner">
-<h3 class="callout-title">Assessing Knowledge Before a Workshop<a class="anchor" aria-label="anchor" href="#assessing-knowledge-before-a-workshop"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="assessing-knowledge-before-a-workshop">Assessing Knowledge Before a Workshop<a class="anchor" aria-label="anchor" href="#assessing-knowledge-before-a-workshop"></a>
 </h3>
 <div class="callout-content">
 <p>The same approach to designing exercises within a lesson can also be
@@ -3660,13 +3668,13 @@ fenced div using another line with least 3 colons.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: challenge</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Challenge Title</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Challenge text, code, and other information goes here</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>:::::::::::::::::::::::::::::::::::::: challenge</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">### Challenge Title</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>Challenge text, code, and other information goes here</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>::::::::::::::::::::::::::::::::::::::::::::::::::</span></code></pre>
 </div>
 <p>If you also want to include an expandable solution box for the
 challenge you can add a solution fenced div within the challenge box.
@@ -3805,10 +3813,11 @@ in the lesson.</li>
 </div>
 </div>
 </div>
-<figure><img src=".././fig/cldt-step-3.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development,  adapted from Nicholl's five phases, with step 3, 'Develop relevant content' highlighted." class="figure mx-auto d-block"><figcaption>Now that we have designed assessments to measure
+<figure><img src=".././fig/cldt-step-3.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development, adapted from Nicholl's five phases, with step 3, 'Develop relevant content' highlighted." class="figure mx-auto d-block"><div class="figcaption">Now that we have designed assessments to measure
 attainment of the objectives set for the lesson, it is time to begin
 developing teaching content to give learners the knowledge and skills
-they need to succeed in those assessments.</figcaption></figure><section id="creating-a-narrative"><h2 class="section-heading">Creating a Narrative<a class="anchor" aria-label="anchor" href="#creating-a-narrative"></a>
+they need to succeed in those assessments.</div>
+</figure><section id="creating-a-narrative"><h2 class="section-heading">Creating a Narrative<a class="anchor" aria-label="anchor" href="#creating-a-narrative"></a>
 </h2>
 <hr class="half-width">
 <!--- Should this section go before LO and questions? --><p>Writing your lesson as a story helps learners stay motivated and
@@ -3831,12 +3840,12 @@ narrative flow and make the lesson feel more authentic. Even if your
 topic doesn’t require a dataset, deciding on a consistent narrative will
 help create a flow between episodes and reduce cognitive load for
 learners.</p>
-<div id="varying-examples" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="varying-examples" class="callout-inner">
-<h3 class="callout-title">Varying Examples<a class="anchor" aria-label="anchor" href="#varying-examples"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="varying-examples">Varying Examples<a class="anchor" aria-label="anchor" href="#varying-examples"></a>
 </h3>
 <div class="callout-content">
 <blockquote>
@@ -3880,12 +3889,12 @@ to license these images to be compatible with the license on the rest of
 your lesson materials.</p>
 <p>The guidance in this section is not a substitute for legal
 advice.</p>
-<div id="compatible-licenses" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="compatible-licenses" class="callout-inner">
-<h3 class="callout-title">Compatible Licenses<a class="anchor" aria-label="anchor" href="#compatible-licenses"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="compatible-licenses">Compatible Licenses<a class="anchor" aria-label="anchor" href="#compatible-licenses"></a>
 </h3>
 <div class="callout-content">
 <p>Creative Commons offers a chart that identifies which CC licenses are
@@ -3943,12 +3952,12 @@ Carpentries Incubator</a> are encouraged to use CC0 licensed data, and
 may be required to do so to qualify for peer review in <a href="https://carpentries-lab.org/" class="external-link">The Carpentries Lab</a>. Even with a
 CC0 license, you will still want to follow best practice in giving
 attribution to the data provider or collecting agency.</p>
-<div id="more-cc0-license-reading" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="more-cc0-license-reading" class="callout-inner">
-<h3 class="callout-title">More CC0 License Reading<a class="anchor" aria-label="anchor" href="#more-cc0-license-reading"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="more-cc0-license-reading">More CC0 License Reading<a class="anchor" aria-label="anchor" href="#more-cc0-license-reading"></a>
 </h3>
 <div class="callout-content">
 <p>If you’d like to read more about CC0 and CC-BY, Katie Fortney wrote
@@ -3982,7 +3991,7 @@ data collected about an individual or groups of people.</p>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Outline covering the above paragraph - also used in CodiMD
 template.</p>
@@ -4224,12 +4233,12 @@ the lesson content or differing mental models. In general, it is not a
 good idea to assume others, learners or instructors, will know what you
 were thinking when you wrote the content so, if in doubt, be
 explicit.</p>
-<div id="using-callouts" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="using-callouts" class="callout-inner">
-<h3 class="callout-title">Using Callouts<a class="anchor" aria-label="anchor" href="#using-callouts"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="using-callouts">Using Callouts<a class="anchor" aria-label="anchor" href="#using-callouts"></a>
 </h3>
 <div class="callout-content">
 <p>Often lessons have more content than can be reasonably taught in the
@@ -4326,13 +4335,12 @@ map</a> to help identify which objectives depend on one another.</p>
 <p>Alternatively, if you decide to keep certain objectives in the
 lesson, you can add suggestions on which objectives can be skipped to
 the Instructor Notes for the lesson.</p>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title">Callout</h3>
 <div class="callout-content">
 <p>The Instructor Notes for the whole lesson should be added to the
 <code>instructors/instructor-notes.md</code> file. This page is
@@ -4449,8 +4457,9 @@ foreground contrast for images</a></li>
 <div class="callout-content">
 <p>Which of the following is a good alt-text option for the image
 below?</p>
-<figure><img src="https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png" alt="Line graph of increasing carbon dioxide at the Mauna Loa Observatory from 1958 to present" class="figure mx-auto d-block"><figcaption>Atmospheric Carbon Dioxide at Mauna Loa
-Observatory</figcaption></figure><ol style="list-style-type: decimal">
+<figure><img src="https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png" alt="Line graph of increasing carbon dioxide at the Mauna Loa Observatory from 1958 to present" class="figure mx-auto d-block"><div class="figcaption">Atmospheric Carbon Dioxide at Mauna Loa
+Observatory</div>
+</figure><ol style="list-style-type: decimal">
 <li>Graph of data</li>
 <li>Graph with increasing lines</li>
 <li>Line graph of increasing carbon dioxide in ppm at the Mauna Loa
@@ -4630,8 +4639,10 @@ place.</p>
 of a lesson life cycle, which The Carpentries promotes to help
 developers communicate the status of an open source lesson project to
 instructors and learners.</p>
-<figure><img src="../fig/life_cycle_annotated.png" alt="The life cycle of a lesson in The Carpentries ecosystem,  annotated to indicate the platforms provided for lesson projects at each stage of the cycle. In the diagram includes the pre-alpha, alpha, beta, and stable stages described earlier, and icons showing that pre-alpha through beta development of lessons happens in The Carpentries Incubator, while The Carpentries Lab hosts peer-reviewed lessons and provides a platform for open peer review. Stable lessons may also be adopted into an official lesson program of The Carpentries." class="figure mx-auto d-block"><figcaption>The life cycle of a lesson, annotated to indicate the
-platforms provided for lesson projects at each stage of the cycle.</figcaption></figure><div class="section level3">
+<figure><img src="../fig/life_cycle_annotated.png" alt="The life cycle of a lesson in The Carpentries ecosystem, annotated to indicate the platforms provided for lesson projects at each stage of the cycle. In the diagram includes the pre-alpha, alpha, beta, and stable stages described earlier, and icons showing that pre-alpha through beta development of lessons happens in The Carpentries Incubator, while The Carpentries Lab hosts peer-reviewed lessons and provides a platform for open peer review. Stable lessons may also be adopted into an official lesson program of The Carpentries." class="figure mx-auto d-block"><div class="figcaption">The life cycle of a lesson, annotated to
+indicate the platforms provided for lesson projects at each stage of the
+cycle.</div>
+</figure><div class="section level3">
 <h3 id="indicating-your-lessons-progress">Indicating Your Lesson’s Progress<a class="anchor" aria-label="anchor" href="#indicating-your-lessons-progress"></a>
 </h3>
 <p>The life cycle stage of a lesson is displayed as a banner on the
@@ -4644,12 +4655,12 @@ introduced to <a href="infrastructure.html">The Carpentries
 Workbench</a>, as a value for the <code>life_cycle</code> field. For new
 lesson repositories, this value is already set to ‘pre-alpha’, so you
 should not have to change it yet.</p>
-<div id="the-carpentry-field" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="the-carpentry-field" class="callout-inner">
-<h3 class="callout-title">The<code>carpentry</code>Field<a class="anchor" aria-label="anchor" href="#the-carpentry-field"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="the-carpentry-field">The <code>carpentry</code> Field<a class="anchor" aria-label="anchor" href="#the-carpentry-field"></a>
 </h3>
 <div class="callout-content">
 <p>The <code>config.yaml</code> file also contains a
@@ -4737,12 +4748,12 @@ vital that instructors have the opportunity before the workshop to learn
 about the lesson from the authors, and to debrief with the authors
 afterwards so that they can share their experience and observations
 about how the lesson could be further improved.</p>
-<div id="hosting-and-teaching-pilot-workshops" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="hosting-and-teaching-pilot-workshops" class="callout-inner">
-<h3 class="callout-title">Hosting and Teaching Pilot Workshops<a class="anchor" aria-label="anchor" href="#hosting-and-teaching-pilot-workshops"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="hosting-and-teaching-pilot-workshops">Hosting and Teaching Pilot Workshops<a class="anchor" aria-label="anchor" href="#hosting-and-teaching-pilot-workshops"></a>
 </h3>
 <div class="callout-content">
 <p>The Carpentries community handbook includes <a href="https://docs.carpentries.org/topic_folders/lesson_development/lesson_pilots.html" class="external-link">guidance
@@ -4864,9 +4875,10 @@ process?</li>
 </div>
 </div>
 </div>
-<figure><img src=".././fig/cldt-step-4.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development,  adapted from Nicholl's five phases, with step 4, 'Assess learner progress' highlighted." class="figure mx-auto d-block"><figcaption>In this episode, we will discuss how you can measure
-learner progress and gather feedback about the effectiveness of your
-content by teaching the lesson.</figcaption></figure><p>By now you should have developed objectives, exercises/formative
+<figure><img src=".././fig/cldt-step-4.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development, adapted from Nicholl's five phases, with step 4, 'Assess learner progress' highlighted." class="figure mx-auto d-block"><div class="figcaption">In this episode, we will discuss how you can
+measure learner progress and gather feedback about the effectiveness of
+your content by teaching the lesson.</div>
+</figure><p>By now you should have developed objectives, exercises/formative
 assessments, and examples for at least one of the episodes in your
 lesson. In order to prepare to teach it (for the first time in
 particular) you’ll need to create a teaching plan and design a method to
@@ -4891,12 +4903,12 @@ learners</li>
 other parts of the teaching plan</li>
 <li>resources/references/recommended reading</li>
 </ul>
-<div id="checkpoints-in-a-teaching-plan" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="checkpoints-in-a-teaching-plan" class="callout-inner">
-<h3 class="callout-title">Checkpoints in a Teaching Plan<a class="anchor" aria-label="anchor" href="#checkpoints-in-a-teaching-plan"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="checkpoints-in-a-teaching-plan">Checkpoints in a Teaching Plan<a class="anchor" aria-label="anchor" href="#checkpoints-in-a-teaching-plan"></a>
 </h3>
 <div class="callout-content">
 <p>Checkpoints are especially useful at the beginning of a lesson when
@@ -4999,12 +5011,12 @@ information:</p>
 <p>It may initially be difficult to create Instructor Notes until you
 have taught the lesson yourself for the first time - but after the first
 pilot you will have enough feedback to draft them.</p>
-<div id="hidden-curriculum" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="hidden-curriculum" class="callout-inner">
-<h3 class="callout-title">Hidden Curriculum<a class="anchor" aria-label="anchor" href="#hidden-curriculum"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="hidden-curriculum">Hidden Curriculum<a class="anchor" aria-label="anchor" href="#hidden-curriculum"></a>
 </h3>
 <div class="callout-content">
 <p>The concept of <strong>hidden curriculum</strong> describes
@@ -5317,7 +5329,7 @@ of this task.</p>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Adding Design Notes to the Lesson Site</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>If trainees would like to add the Design Notes document they have
 been working on to their lesson site, they can do the following:</p>
@@ -5340,9 +5352,9 @@ example, if their file is saved with the name ‘design-notes.md’:</li>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Information for Instructors</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">instructors</span><span class="kw">:</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> design-notes.md</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># Information for Instructors</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">instructors</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="kw">-</span><span class="at"> design-notes.md</span></span></code></pre>
 </div>
 <p>This will make the page accessible from the ‘More’ dropdown in
 Instructor View.</p>
@@ -5415,7 +5427,7 @@ trialling lesson material.</li>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>This episode picks-up after a long break in training for learners,
 you may need to remind them of the following expectations as part of
@@ -5433,10 +5445,11 @@ chat, etc.</li>
 </div>
 </div>
 </div>
-<figure><img src=".././fig/cldt-step-5.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development,  adapted from Nicholl's five phases, with step 5, 'Evaluate curriculum' highlighted." class="figure mx-auto d-block"><figcaption>In this episode, we will discuss the final step of
-the iterative lesson design process: how you can use the notes,
+<figure><img src=".././fig/cldt-step-5.svg" style="width:67.0%" alt="An overview of the iterative process of lesson design and development, adapted from Nicholl's five phases, with step 5, 'Evaluate curriculum' highlighted." class="figure mx-auto d-block"><div class="figcaption">In this episode, we will discuss the final step
+of the iterative lesson design process: how you can use the notes,
 information, and feedback you collected when trialling your lesson to
-identify ways that the design and content could be improved.</figcaption></figure><p>In part 2 of the training, we will learn more about the skills and
+identify ways that the design and content could be improved.</div>
+</figure><p>In part 2 of the training, we will learn more about the skills and
 tools you can use to become an effective collaborator on an open source
 lesson. Before moving on to cover that, we will spend some time
 reflecting on and discussing the experience of teaching new lesson
@@ -5466,7 +5479,7 @@ the quality of your lesson.</p>
   <h3 class="accordion-header" id="headingInstructor2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Discussion format</h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
 <div class="accordion-body">
 <p>For online trainings, Trainers have found it beneficial to give
 participants the first 5 minutes together in a breakout room, to
@@ -5749,12 +5762,12 @@ a decision is made to integrate or not integrate the changes in the
 default branch of the project and the associated lesson. On GitHub,
 these units of discussion, review, and acceptance/rejection of the
 changes within a branch are called <em>Pull Requests</em>.</p>
-<div id="why-pull-request" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="why-pull-request" class="callout-inner">
-<h3 class="callout-title">Why “Pull Request”?<a class="anchor" aria-label="anchor" href="#why-pull-request"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="why-pull-request">Why “Pull Request”?<a class="anchor" aria-label="anchor" href="#why-pull-request"></a>
 </h3>
 <div class="callout-content">
 <p>The term <em>Pull Request</em> originates from the early days of
@@ -5858,12 +5871,12 @@ included in the actual lesson.)</li>
 </div>
 </div>
 </div>
-<div id="protecting-main-branch" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="protecting-main-branch" class="callout-inner">
-<h3 class="callout-title">Protecting<code>main</code>Branch<a class="anchor" aria-label="anchor" href="#protecting-main-branch"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="protecting-main-branch">Protecting <code>main</code> Branch<a class="anchor" aria-label="anchor" href="#protecting-main-branch"></a>
 </h3>
 <div class="callout-content">
 <p>Repository administrators can enforce this workflow by
@@ -5876,12 +5889,12 @@ rules</a>.</p>
 </div>
 </div>
 </div>
-<div id="reviewing-is-a-skill" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="reviewing-is-a-skill" class="callout-inner">
-<h3 class="callout-title">Reviewing is a Skill<a class="anchor" aria-label="anchor" href="#reviewing-is-a-skill"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="reviewing-is-a-skill">Reviewing is a Skill<a class="anchor" aria-label="anchor" href="#reviewing-is-a-skill"></a>
 </h3>
 <div class="callout-content">
 <p>Making effective review comments in a PR is something you will get
@@ -6298,12 +6311,12 @@ can be helpful if they are struggling with GitHub notifications.</p>
 </div>
 </div>
 </div>
-<div id="managing-github-notifications" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="managing-github-notifications" class="callout-inner">
-<h3 class="callout-title">Managing GitHub Notifications<a class="anchor" aria-label="anchor" href="#managing-github-notifications"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="managing-github-notifications">Managing GitHub Notifications<a class="anchor" aria-label="anchor" href="#managing-github-notifications"></a>
 </h3>
 <div class="callout-content">
 <p>If you work on multiple projects, or the projects you follow on
@@ -6559,12 +6572,12 @@ higher level and are more suitable for project management tasks that are
 more continuous and not time-bound. While a Milestone is associated with
 a single repository, a Project can span over multiple Milestones and
 even different repositories within an organisation in GitHub.</p>
-<div id="milestones-vs-projects" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="milestones-vs-projects" class="callout-inner">
-<h3 class="callout-title">Milestones vs Projects<a class="anchor" aria-label="anchor" href="#milestones-vs-projects"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="milestones-vs-projects">Milestones vs Projects<a class="anchor" aria-label="anchor" href="#milestones-vs-projects"></a>
 </h3>
 <div class="callout-content">
 <p>For a good description of differences between the two, have a look at
@@ -6734,7 +6747,7 @@ interactions can influence the progress you make.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>For Teams of Collaborators</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>As a team read <a href="https://github.com/carpentries/lesson-development-training/blob/main/GOVERNANCE.md" class="external-link">the
 description of project governance for this training curriculum</a>.</p>
@@ -6764,7 +6777,7 @@ project progress in your team.)</p>
   <h3 class="accordion-header" id="headingSpoiler2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>For Lesson Developers Working Alone</h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <p>The <a href="https://coast.noaa.gov/ddb/" class="external-link"><em>Dealing with Disruptive
 Behaviours</em></a> resource from the US National Oceanic and
@@ -6816,7 +6829,7 @@ process for decision making within the project.</li>
 </div>
 </section></section><section id="aio-wrap-up3"><p>Content from <a href="wrap-up3.html">Final Wrap-up</a></p>
 <hr>
-<p>Last updated on 2023-09-20 |
+<p>Last updated on 2024-03-01 |
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/wrap-up3.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -7122,8 +7135,8 @@ you.</li>
   "url": "https://carpentries.github.io/lesson-development-training/instructor/aio.html",
   "identifier": "https://carpentries.github.io/lesson-development-training/instructor/aio.html",
   "dateCreated": "2022-01-18",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-01",
+  "datePublished": "2024-03-01"
 }
 
   </script><script>
