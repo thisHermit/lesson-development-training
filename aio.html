@@ -1854,7 +1854,7 @@ into chunks</li>
 <p>Take a break. If you can, move around and look at something away from
 your screen to give your eyes a rest.</p></section><section id="aio-infrastructure"><p>Content from <a href="infrastructure.html">The Carpentries Workbench</a></p>
 <hr>
-<p>Last updated on 2023-11-16 |
+<p>Last updated on 2024-05-07 |
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/infrastructure.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2042,6 +2042,7 @@ are source files for the content of our new lesson, but a few are
 accompanying files primarily intended for the repository itself rather
 than the lesson website. These are:</p>
 <ul>
+<li><code>CITATION.cff</code></li>
 <li><code>CODE_OF_CONDUCT.md</code></li>
 <li><code>CONTRIBUTING.md</code></li>
 <li><code>LICENSE.md</code></li>
@@ -2435,7 +2436,7 @@ developing a new lesson.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>Troubleshooting the Lesson Build Process</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>Sometimes, formatting errors and typos in the files of your
 repository can cause the process that builds your lesson website to
@@ -5662,7 +5663,7 @@ around lesson issues and development, respectively.</li>
 <p>Take a break. If you can, move around and look at something away from
 your screen to give your eyes a rest.</p></section><section id="aio-collaborating-newcomers"><p>Content from <a href="collaborating-newcomers.html">Collaborating with Newcomers</a></p>
 <hr>
-<p>Last updated on 2024-03-25 |
+<p>Last updated on 2024-05-07 |
         
         <a href="https://github.com/carpentries/lesson-development-training/edit/main/episodes/collaborating-newcomers.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -5782,27 +5783,11 @@ directory to list all the people who contributed to the lesson content
 <li>
 <strong>citation</strong> - a convention is to include the citation
 information for your lesson in a separate <code>CITATION</code> file
-within the repository’s root directory (and link to it from
-<code>README</code>) so others can cite the use of the lesson in their
+within the repository’s root directory and link to it from
+<code>README.md</code> so others can cite the use of the lesson in their
 own publications and media and it can also be automatically discovered
-by other applications. Citation can be a Digital Object Identifier (DOI)
-issued by a reputable DOI-issuing repository such as <a href="https://zenodo.org/" class="external-link">Zenodo</a>, which should be obtained as a
-permanent identifier as soon as your lesson reaches the beta stage, or
-an appropriate academic publication once your lesson becomes stable and
-is peer-reviewed. Citation can be contained in a plain text file
-(<code>CITATION</code>, <code>CITATION.txt</code>), a Markdown file
-(<code>CITATION.md</code>), or in the recently adopted <a href="https://github.com/citation-file-format/citation-file-format" class="external-link">Citation
-File Format</a> (<code>CITATION.cff</code>). The CFF is defined using <a href="https://yaml.org/spec/1.2.2/" class="external-link">YAML</a> (which we already
-encountered in the <code>config.yaml</code> file for the lesson website)
-and is now <a href="https://github.blog/2021-08-19-enhanced-support-citations-github/" class="external-link">the
-recommended way of storing citations in GitHub</a>. Advantages of using
-CFF are that GitHub will automatically show the citation information in
-the sidebar, making it more visible and accessible for visitors to your
-repository. In addition, metadata from <code>CITATION.cff</code> files
-will automatically be used by <a href="https://zenodo.org/" class="external-link">Zenodo</a>
-when registering the DOI for your lesson/project. CFF metadata is also
-recognised by the <a href="https://www.zotero.org/" class="external-link">Zotero reference
-manager</a>.</li>
+by other applications. These <code>CITATION</code> files are discussed
+in more detail below.</li>
 <li>
 <strong>license</strong> - a short description of and a link to the
 lesson’s license typically contained in a separate <code>LICENSE</code>,
@@ -5813,6 +5798,40 @@ Carpentries lesson template already contains a default
 accurately describe how the lesson content can be re-used by
 others.</li>
 </ul>
+</div>
+<div class="section level3">
+<h3 id="helping-people-cite-your-lesson">Helping People Cite Your Lesson<a class="anchor" aria-label="anchor" href="#helping-people-cite-your-lesson"></a>
+</h3>
+<p>The default citation file for new lessons using The Carpentries
+Workbench is <code>CITATION.cff</code>, in <a href="https://github.com/citation-file-format/citation-file-format" class="external-link">Citation
+File Format (CFF)</a>. CFF is defined using <a href="https://yaml.org/spec/1.2.2/" class="external-link">YAML</a> (which we already
+encountered in the <code>config.yaml</code> file for the lesson website)
+and is <a href="https://github.blog/2021-08-19-enhanced-support-citations-github/" class="external-link">the
+recommended way of storing citations in GitHub</a>. If your lesson
+repository contains a <code>CITATION.cff</code> file, GitHub will
+automatically show the citation information in the sidebar, making it
+more visible and accessible for visitors to your repository. CFF is also
+recognised and supported by other platforms including <a href="https://zenodo.org/" class="external-link">Zenodo</a> and the <a href="https://www.zotero.org/" class="external-link">Zotero reference manager</a>.</p>
+<p>The <code>CITATION.cff</code> file for newly-created lessons contains
+only placeholder information, which should be replaced with relevant
+details for your project as soon as practical. Citation information can
+also be contained in a plain text file (<code>CITATION</code>,
+<code>CITATION.txt</code>) or a Markdown file
+(<code>CITATION.md</code>). In all cases, it is up to the lesson
+developers to decide what information to include in their citation
+file.</p>
+<div class="section level4">
+<h4 id="digital-object-identifiers">Digital Object Identifiers<a class="anchor" aria-label="anchor" href="#digital-object-identifiers"></a>
+</h4>
+<p>We recommend that you obtain a <a href="https://the-turing-way.netlify.app/communication/citable/citable-steps.html?highlight=doi#dois" class="external-link">Digital
+Object Identifier (DOI)</a> for your lesson as soon as feels
+appropriate, at the latest when the lesson reaches the beta phase. You
+can use this DOI in the citation information (e.g. <a href="https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#identifiers" class="external-link">in
+the <code>identifiers</code> field of your
+<code>CITATION.cff</code></a>), to allow people to cite a particular
+version of your lesson, e.g. a snapshot of the lesson when it entered
+beta testing, captured as a Zenodo record.</p>
+</div>
 </div>
 <div class="section level3">
 <h3 id="contributing">Instructions for Contributors - <code>CONTRIBUTING</code> File<a class="anchor" aria-label="anchor" href="#contributing"></a>
@@ -5893,6 +5912,11 @@ the development of the lesson (README)</li>
 <li>Create a new issue or pull request template, or modify an existing
 one, to guide contributors on how best to begin collaborating with you
 on GitHub.</li>
+<li>Using <a href="https://citation-file-format.github.io/cff-initializer-javascript/" class="external-link">the
+<code>cffinit</code> webtool</a>, create a <code>CITATION.cff</code>
+with information appropriate to your project (listing authors, including
+the lesson title, repository URL, etc) and overwrite the current
+placeholder content with the result.</li>
 </ol>
 <p>Groups of collaborators taking this training together should discuss
 first how they will assign these tasks between them.</p>
@@ -6409,7 +6433,7 @@ interactions can influence the progress you make.</p>
   <h3 class="accordion-header" id="headingSpoiler1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>For Teams of Collaborators</h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <p>As a team read <a href="https://github.com/carpentries/lesson-development-training/blob/main/GOVERNANCE.md" class="external-link">the
 description of project governance for this training curriculum</a>.</p>
@@ -6439,7 +6463,7 @@ project progress in your team.)</p>
   <h3 class="accordion-header" id="headingSpoiler2">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>For Lesson Developers Working Alone</h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <p>The <a href="https://coast.noaa.gov/ddb/" class="external-link"><em>Dealing with Disruptive
 Behaviours</em></a> resource from the US National Oceanic and
